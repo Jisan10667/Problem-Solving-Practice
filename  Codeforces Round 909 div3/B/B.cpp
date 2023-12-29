@@ -47,53 +47,20 @@ using namespace std ;
 
 void solve()
 {  
-  
+   ll n, k ;
+   cin>>n>>k ;
+   ll a[n], b[n] ;
+   
+   for(i=0 ; i<n ; i++)cin>>a[i] ;
+   for(i=0 ; i<n ; i++)cin>>b[i] ;
 
-   int i, j, n ;
+   ll sum=0, ans=0, max=-1 ;
 
-   cin>>n ;
-   vector<pair<int,int> > ski(n),movie(n),bored(n);
-
-   for(i=0 ; i<3 ; i++){
-      for(j=0 ; j<n ; j++){
-         int x ;
-         cin>>x ;
-
-         if(i==0)ski[j]={x,j+1} ;
-         if(i==1)movie[j]={x,j+1} ;
-         if(i==2)bored[j]={x,j+1} ;
-      }
+   for(ll i=0 ; i<n && k>0 ; i++ ){
+      sum+=a[i] ;
+      k-- ;
+      m
    }
-
-   sort(ski.begin(),ski.end()) ;
-   sort(movie.begin(),movie.end()) ;
-   sort(bored.begin(),bored.end()) ;
-   int maxi=-1 ;
-   for(i=0 ; i<3 ; i++){
-      int sk=-1,mov=-1,bor=-1, sum=0 ;
-
-      for(int skj=0 ; skj<3 ; skj++){
-         sk=ski[skj].S ;
-         for(int movj=0 ; movj<3 ; movj++){
-            mov=movie[movj].S ;
-            if(mov==sk)continue ;
-
-            for(int borj=0 ; borj<3 ; borj++){
-               bor=bored[borj].S ;
-               if(sk==bor)continue ;
-               if(mov==bor)continue ;
-
-               // cout<<sk<<" "<<mov<<" "<<bor<<endl ;
-               sum=ski[sk-1].F+movie[mov-1].F+bored[bor-1].F ;
-               maxi=max(maxi,sum) ;
-               // cout<<maxi<<endl ;
-
-            }
-         }
-
-      }
-   } 
-   cout<<maxi<<endl ;  
 
 }
 
@@ -103,7 +70,7 @@ int main(){
    freopen("output.txt", "w", stdout);
 #endif
     
-     tara ;
+    // tara ;
    
     int t;
     t = 1;
