@@ -17,6 +17,7 @@
 #include<string>
 #include<stdlib.h>
 #include<iomanip>
+#include<stack>
  
 #define PI acos(-1)
 #define F first
@@ -47,20 +48,25 @@ using namespace std ;
 
 void solve()
 {  
-   ll n, k ;
-   cin>>n>>k ;
-   ll a[n], b[n] ;
-   
-   for(i=0 ; i<n ; i++)cin>>a[i] ;
-   for(i=0 ; i<n ; i++)cin>>b[i] ;
+   stack<char>st ;
 
-   ll sum=0, ans=0, max=-1 ;
+   string s ;
+   int n, i ;
+   cin>>n ;
+   cin>>s ;
 
-   for(ll i=0 ; i<n && k>0 ; i++ ){
-      sum+=a[i] ;
-      k-- ;
-      m
+   for(i=0 ; i<n ; i++){
+      if(st.empty()){
+         st.push(s[i]) ;
+      }
+      else{
+         char x=st.top() ;
+
+         if(x==s[i])st.push(s[i]) ;
+         else st.pop() ;
+      }
    }
+   cout<<st.size()<<endl ;
 
 }
 
@@ -70,7 +76,7 @@ int main(){
    freopen("output.txt", "w", stdout);
 #endif
     
-    // tara ;
+    tara ;
    
     int t;
     t = 1;

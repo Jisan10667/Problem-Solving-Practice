@@ -47,29 +47,18 @@ using namespace std ;
 
 void solve()
 {
-    int n ;
-    cin>>n ;
-    string s ;
-    cin>>s ;
-    unordered_map<char, int>mp ;
-    for(int i=0 ; i<n ; i++){
-        mp[s[i]]++ ;
-    }
-    int ans=0 ;
-    for(auto x: mp){
-        if(x.S>=int(x.F-'A'+1)){
-            ans++ ;
-        }
-    }
-    cout<<ans<<endl ;
+   int n ;
+   cin>>n ;
+   if(n%3)pf("First\n") ;
+   else pf("Second\n") ;
 
 }
 
 int main(){
-// #ifndef ONLINE_JUDGE
-//    freopen("input.txt", "r", stdin);
-//    freopen("output.txt", "w", stdout);
-// #endif
+#ifndef ONLINE_JUDGE
+   freopen("input.txt", "r", stdin);
+   freopen("output.txt", "w", stdout);
+#endif
     
     tara ;
    

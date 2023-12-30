@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"inc",
+				"include"
+			],
+			[
 				"b",
 				"cstdlib"
 			],
@@ -16,829 +20,296 @@
 	"buffers":
 	[
 		{
-			"file": "A.cpp",
+			"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/A.cpp",
 			"settings":
 			{
-				"buffer_size": 1357,
+				"buffer_size": 1341,
 				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "A"
+				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
 				[
+					3,
 					1,
+					"left_delete",
+					null,
+					"AQAAALMDAAAAAAAAswMAAAAAAAALAQAAIGludCBuIDsKICAgIGNpbj4+biA7CiAgICBzdHJpbmcgcyA7CiAgICBjaW4+PnMgOwogICAgdW5vcmRlcmVkX21hcDxjaGFyLCBpbnQ+bXAgOwogICAgZm9yKGludCBpPTAgOyBpPG4gOyBpKyspewogICAgICAgIG1wW3NbaV1dKysgOwogICAgfQogICAgaW50IGFucz0wIDsKICAgIGZvcihhdXRvIHg6IG1wKXsKICAgICAgICBpZih4LlM+PWludCh4LkYtJ0EnKzEpKXsKICAgICAgICAgICAgYW5zKysgOwogICAgICAgIH0KICAgIH0KICAgIGNvdXQ8PGFuczw8ZW5kbCA7",
+					"AQAAAAAAAAABAAAAswMAAAAAAAC+BAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"BAAAAC4EAAAAAAAALgQAAAAAAAADAAAALy8gBAQAAAAAAAAEBAAAAAAAAAMAAAAvLyDcAwAAAAAAANwDAAAAAAAAAwAAAC8vIMQDAAAAAAAAxAMAAAAAAAADAAAALy8g",
+					"AQAAAAAAAAABAAAANwQAAAAAAADEAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
 					1,
 					"insert",
 					{
-						"characters": "A"
+						"characters": "int"
 					},
-					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+					"AwAAALMDAAAAAAAAtAMAAAAAAAAAAAAAtAMAAAAAAAC1AwAAAAAAAAAAAAC1AwAAAAAAALYDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAswMAAAAAAACzAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": " n"
+					},
+					"AgAAALYDAAAAAAAAtwMAAAAAAAAAAAAAtwMAAAAAAAC4AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtgMAAAAAAAC2AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": " ;"
+					},
+					"AgAAALgDAAAAAAAAuQMAAAAAAAAAAAAAuQMAAAAAAAC6AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuAMAAAAAAAC4AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": "\ncin>>n"
+					},
+					"CAAAALoDAAAAAAAAuwMAAAAAAAAAAAAAuwMAAAAAAAC+AwAAAAAAAAAAAAC+AwAAAAAAAL8DAAAAAAAAAAAAAL8DAAAAAAAAwAMAAAAAAAAAAAAAwAMAAAAAAADBAwAAAAAAAAAAAADBAwAAAAAAAMIDAAAAAAAAAAAAAMIDAAAAAAAAwwMAAAAAAAAAAAAAwwMAAAAAAADEAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAugMAAAAAAAC6AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": " ;"
+					},
+					"AgAAAMQDAAAAAAAAxQMAAAAAAAAAAAAAxQMAAAAAAADGAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAMAAAAAAADEAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "\nif"
+					},
+					"BAAAAMYDAAAAAAAAxwMAAAAAAAAAAAAAxwMAAAAAAADKAwAAAAAAAAAAAADKAwAAAAAAAMsDAAAAAAAAAAAAAMsDAAAAAAAAzAMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgMAAAAAAADGAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAMwDAAAAAAAAzgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzAMAAAAAAADMAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "n%3"
+					},
+					"AwAAAM0DAAAAAAAAzgMAAAAAAAAAAAAAzgMAAAAAAADPAwAAAAAAAAAAAADPAwAAAAAAANADAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzQMAAAAAAADNAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": "pf"
+					},
+					"AgAAANEDAAAAAAAA0gMAAAAAAAAAAAAA0gMAAAAAAADTAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0QMAAAAAAADRAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAANMDAAAAAAAA1QMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0wMAAAAAAADTAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					},
+					"AQAAANQDAAAAAAAA1gMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1AMAAAAAAADUAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					21,
 					1,
-					"left_delete",
-					null,
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAQQ",
-					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+					"insert",
+					{
+						"characters": "First\\"
+					},
+					"BgAAANUDAAAAAAAA1gMAAAAAAAAAAAAA1gMAAAAAAADXAwAAAAAAAAAAAADXAwAAAAAAANgDAAAAAAAAAAAAANgDAAAAAAAA2QMAAAAAAAAAAAAA2QMAAAAAAADaAwAAAAAAAAAAAADaAwAAAAAAANsDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1QMAAAAAAADVAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					22,
 					1,
 					"insert",
 					{
-						"characters": "#incl"
+						"characters": "n"
 					},
-					"BQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAFAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+					"AQAAANsDAAAAAAAA3AMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2wMAAAAAAADbAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					23,
+					24,
 					1,
 					"insert",
 					{
-						"characters": "ude"
+						"characters": " ;"
 					},
-					"AwAAAAUAAAAAAAAABgAAAAAAAAAAAAAABgAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAgAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAABQAAAAAAAAAFAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					31,
-					1,
-					"paste",
-					null,
-					"AgAAAAAAAAAAAAAAFA0AAAAAAAAAAAAAFA0AAAAAAAAUDQAAAAAAAAgAAAAjaW5jbHVkZQ",
-					"AQAAAAAAAAABAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					36,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"BAAAAEALAAAAAAAAQAsAAAAAAAACAAAALy8WCwAAAAAAABYLAAAAAAAAAwAAAC8vIO4KAAAAAAAA7goAAAAAAAADAAAALy8g1woAAAAAAADXCgAAAAAAAAIAAAAvLw",
-					"AQAAAAAAAAABAAAASAsAAAAAAADXCgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					39,
-					1,
-					"left_delete",
-					null,
-					"AQAAAEMLAAAAAAAAQwsAAAAAAABdAAAALy8gc2V0SU8oImRpdjciKTsKICAgIC8vIGZyZW9wZW4oImRpdjcuaW4iLCJyIixzdGRpbik7CiAgICAvLyBmcmVvcGVuKCJkaXY3Lm91dCIsInciLHN0ZG91dCk7",
-					"AQAAAAAAAAABAAAAQwsAAAAAAACgCwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					42,
-					2,
-					"left_delete",
-					null,
-					"AgAAAFQLAAAAAAAAVAsAAAAAAABPAAAALy8gZnJlb3BlbigibGlnaHRzb24uaW4iLCJyIixzdGRpbik7CiAgICAvLyBmcmVvcGVuKCJsaWdodHNvbi5vdXQiLCJ3IixzdGRvdXQpO1MLAAAAAAAAUwsAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAVAsAAAAAAACjCwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					45,
-					1,
-					"left_delete",
-					null,
-					"AQAAAG4LAAAAAAAAbgsAAAAAAAAwAAAALy8gcHJlQ2FsYygpOwogICAgLy8gbWVtc2V0KGRwLCAtMSwgc2l6ZW9mKGRwKSk7",
-					"AQAAAAAAAAABAAAAngsAAAAAAABuCwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					48,
-					1,
-					"left_delete",
-					null,
-					"AQAAAGkGAAAAAAAAaQYAAAAAAAAdAQAALy8gdHlwZWRlZiB0cmVlPGludCwgbnVsbF90eXBlLCBsZXNzPGludD4sIHJiX3RyZWVfdGFnLAovLyB0cmVlX29yZGVyX3N0YXRpc3RpY3Nfbm9kZV91cGRhdGU+IG9yZGVyZWRfc2V0OwoKLy8gaW50IGNvdW50KGludCBsLCBpbnQgciwgb3JkZXJlZF9zZXQgJnN0KSB7Ci8vICAgICByZXR1cm4gc3Qub3JkZXJfb2Zfa2V5KHIrMSkgLSBzdC5vcmRlcl9vZl9rZXkobCk7Ci8vIH0KCi8vICNkZWZpbmUgc3ooYSkgKGludClhLnNpemUoKQovLyNkZWZpbmUgZmluIGNpbgovLyNkZWZpbmUgZm91dCBjb3V0",
-					"AQAAAAAAAAABAAAAhgcAAAAAAABpBgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					51,
-					1,
-					"left_delete",
-					null,
-					"AQAAAH8DAAAAAAAAfwMAAAAAAADuAQAACiNkZWZpbmUgaXNzcSh4KSAoKChsbCkoc3FydCgoeCkpKSkqKChsbCkoc3FydCgoeCkpKSk9PSh4KSkKI2RlZmluZSByZXYodikgcmV2ZXJzZSh2LmJlZ2luKCksdi5lbmQoKSkKI2RlZmluZSBhc2NoZSBjZXJyPDwiRWtoYW5lIGFzY2hlXG4iOwojZGVmaW5lIHJldih2KSByZXZlcnNlKHYuYmVnaW4oKSx2LmVuZCgpKQojZGVmaW5lIHNydCh2KSBzb3J0KHYuYmVnaW4oKSx2LmVuZCgpKQojZGVmaW5lIGdydHNydCh2KSBzb3J0KHYuYmVnaW4oKSx2LmVuZCgpLGdyZWF0ZXI8bGw+KCkpCiNkZWZpbmUgYWxsKHYpIHYuYmVnaW4oKSx2LmVuZCgpCiNkZWZpbmUgbW52KHYpICptaW5fZWxlbWVudCh2LmJlZ2luKCksdi5lbmQoKSkKI2RlZmluZSBteHYodikgKm1heF9lbGVtZW50KHYuYmVnaW4oKSx2LmVuZCgpKQojZGVmaW5lIHZhbGlkKHR4LHR5KSAodHg+PTAgJiYgdHg8ciAmJiB0eT49MCAmJiB0eTxuKQojZGVmaW5lIG9uZSh4KSBfX2J1aWx0aW5fcG9wY291bnQoeCk",
-					"AQAAAAAAAAABAAAAbQUAAAAAAAB/AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					54,
-					1,
-					"paste",
-					null,
-					"AgAAAAAAAAAAAAAAXAMAAAAAAAAAAAAAXAMAAAAAAABcAwAAAAAAAKwFAAAjaW5jbHVkZTxiaXRzL3N0ZGMrKy5oPgoKdXNpbmcgbmFtZXNwYWNlIHN0ZDsKCi8vICNwcmFnbWEgR0NDIHRhcmdldCAoImF2eDIiKQovLyAjcHJhZ21hIEdDQyBvcHRpbWl6YXRpb24gKCJPMyIpCi8vICNwcmFnbWEgR0NDIG9wdGltaXphdGlvbiAoInVucm9sbC1sb29wcyIpCgovL3VzaW5nIG5hbWVzcGFjZSBjaHJvbm87Cgp0eXBlZGVmIGxvbmcgbG9uZyBsbDsKdHlwZWRlZiB1bnNpZ25lZCBsb25nIGxvbmcgdWxsOwp0eXBlZGVmIHZlY3RvcjwgaW50ID4gdmk7CnR5cGVkZWYgdmVjdG9yPCBsbCA+IFY7CnR5cGVkZWYgbWFwPGludCwgaW50ID4gbXA7CgojZGVmaW5lIHBiIHB1c2hfYmFjawojZGVmaW5lIEZhc3RJTyBpb3NfYmFzZTo6c3luY193aXRoX3N0ZGlvKGZhbHNlKTsgY2luLnRpZShOVUxMKTsgY291dC50aWUoTlVMTCk7CiNkZWZpbmUgRiBmaXJzdAojZGVmaW5lIFMgc2Vjb25kCgojZGVmaW5lIGRlYnVnIGNvdXQgPDwgLTEgPDwgZW5kbDsKI2RlZmluZSBSRVAoaSwgYSwgYikgZm9yKGludCBpPWE7IGk8YjsgaSsrKQojZGVmaW5lIGYwcihpLCBuKSBmb3IgKGludCBpID0gMDsgaSA8IG47ICsraSkKI2RlZmluZSBmMHIxKGksIG4pIGZvciAoaW50IGkgPSAxOyBpIDw9IG47ICsraSkKI2RlZmluZSByMGYoaSwgbikgZm9yKGludCBpPW4tMTsgaT49MDsgaS0tKQojZGVmaW5lIHIwZjEoaSwgbikgZm9yKGludCBpPW47IGk+PTE7IGktLSkKI2RlZmluZSBmb3JlKGEsIHgpIGZvciAoYXV0byYgYSA6IHgpCiNkZWZpbmUgZm9yaShpLCBhLCBiKSBmb3IgKGludCBpID0gKGEpOyBpIDwgKGIpOyArK2kpCgojZGVmaW5lIE1QIG1ha2VfcGFpcgojZGVmaW5lIFVCIHVwcGVyX2JvdW5kCiNkZWZpbmUgTEIgbG93ZXJfYm91bmQKI2RlZmluZSBudyBjb3V0IDw8ICJcbiIKCgojZGVmaW5lIGRhZyBjZXJyIDw8ICItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuIjsKCgovLyNkZWZpbmUgb3JkZXJlZF9zZXQgdHJlZTxsbCwgbnVsbF90eXBlLGxlc3NfZXF1YWw8bGw+LCByYl90cmVlX3RhZyx0cmVlX29yZGVyX3N0YXRpc3RpY3Nfbm9kZV91cGRhdGU+CgovLyNkZWZpbmUgcG9wIHBvcF9iYWNrCiNkZWZpbmUgc2V0UHJlYyh4KSBjb3V0IDw8IGZpeGVkIDw8IHNldHByZWNpc2lvbih4KQoKCmNvbnN0IGludCBJTkYgPSAxZTk7CmNvbnN0IGxsIE1PRCA9IChsbCkxZTkrNzsKY29uc3QgbGwgSU5GTCA9IDFlMTg7CmNvbnN0IGxsIG1uSU5GID0gLTFlMTg7Ci8vY29uc3QgZG91YmxlIGRpZmYgPSAxMGUtNjsKY29uc3QgaW50IG1heG4gPSAxMDAwMDAyOwpjb25zdCBpbnQgTVggPSAxMDAwMDI7CmNvbnN0IGRvdWJsZSBQSSA9IGFjb3MoLTEpOwp1c2luZyBuYW1lc3BhY2Ugc3RkOwoKY29uc3QgZG91YmxlIGJydWggPSAuMDAwMDAwMDE7CgovLyBpbnQgZHhbXSA9IHstMSwgMCwgMX07Ci8vIGludCBkeVtdID0gey0xLCAwLCAxfTs",
-					"AQAAAAAAAAABAAAAAAAAAAAAAACsBQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					57,
-					1,
-					"left_delete",
-					null,
-					"AQAAAJIDAAAAAAAAkgMAAAAAAAAsAAAALy8gaW50IGR4W10gPSB7MCwgMX07Ci8vIGludCBkeVtdID0gey0xLCAwfTs",
-					"AQAAAAAAAAABAAAAvgMAAAAAAACSAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					60,
-					2,
-					"left_delete",
-					null,
-					"AgAAAJQDAAAAAAAAlAMAAAAAAAATAAAAY29uc3QgaW50IE4gPSAxMDAyO5MDAAAAAAAAkwMAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAApwMAAAAAAACUAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					63,
-					4,
-					"left_delete",
-					null,
-					"BAAAAJUDAAAAAAAAlQMAAAAAAAAaAAAAI2RlZmluZSBkb3VibGUgbG9uZyBkb3VibGWUAwAAAAAAAJQDAAAAAAAAAQAAAAqTAwAAAAAAAJMDAAAAAAAAAQAAAAqSAwAAAAAAAJIDAAAAAAAAAQAAAAo",
-					"AQAAAAAAAAABAAAArwMAAAAAAACVAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					68,
-					4,
-					"left_delete",
-					null,
-					"BAAAAMgFAAAAAAAAyAUAAAAAAAAfAAAAIC8vIGNpbi5pZ25vcmUoKTsKICAgIC8vIHQgPSAxO8cFAAAAAAAAxwUAAAAAAAABAAAAIMYFAAAAAAAAxgUAAAAAAAABAAAAIMUFAAAAAAAAxQUAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAA5wUAAAAAAADIBQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					71,
-					1,
-					"left_delete",
-					null,
-					"AQAAAKcDAAAAAAAApwMAAAAAAABjAQAAaW50IG47CiAgICBjaW4gPj4gbjsKICAgIHZpIHYobik7CiAgICBmMHIoaSwgbikgewogICAgICAgIGNpbiA+PiB2W2ldOwogICAgfQogICAgaW50IG1uV2luID0gSU5GOwogICAgaW50IGFucyA9IDA7CiAgICBpbnQgbW4gPSBJTkY7CiAgICBzZXQ8IGludCA+IHM7CiAgICBmb3IoaW50IGk9MDsgaTxuOyBpKyspIHsKICAgICAgICBpZihtbiA8IHZbaV0gJiYgKHMuZW1wdHkoKSB8fCAqKHMuYmVnaW4oKSk+dltpXSkpIHsKICAgICAgICAgICAgYW5zKys7CiAgICAgICAgICAgIHMuaW5zZXJ0KHZbaV0pOwogICAgICAgIH0KICAgICAgICBtbiA9IG1pbihtbiwgdltpXSk7CiAgICB9CiAgICBjb3V0IDw8IGFucyA8PCAiXG4iOw",
-					"AQAAAAAAAAABAAAApwMAAAAAAAAKBQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					74,
-					4,
-					"left_delete",
-					null,
-					"BAAAALADAAAAAAAAsAMAAAAAAAABAAAAX68DAAAAAAAArwMAAAAAAAABAAAAMq4DAAAAAAAArgMAAAAAAAABAAAAM60DAAAAAAAArQMAAAAAAAABAAAAdA",
-					"AQAAAAAAAAABAAAAsQMAAAAAAACxAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					78,
-					1,
-					"left_delete",
-					null,
-					"AQAAALUDAAAAAAAAtQMAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAAtgMAAAAAAAC2AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					81,
-					1,
-					"left_delete",
-					null,
-					"AQAAAN0DAAAAAAAA3QMAAAAAAAABAAAAZg",
+					"AgAAAN4DAAAAAAAA3wMAAAAAAAAAAAAA3wMAAAAAAADgAwAAAAAAAAAAAAA",
 					"AQAAAAAAAAABAAAA3gMAAAAAAADeAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					84,
+					25,
 					1,
-					"left_delete",
-					null,
-					"AQAAAAIEAAAAAAAAAgQAAAAAAAABAAAAZg",
-					"AQAAAAAAAAABAAAAAwQAAAAAAAADBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					88,
-					2,
-					"left_delete",
-					null,
-					"AgAAAN8DAAAAAAAA3wMAAAAAAAABAAAAbt4DAAAAAAAA3gMAAAAAAAABAAAAaQ",
+					"insert",
+					{
+						"characters": "\nelse"
+					},
+					"BgAAAOADAAAAAAAA4QMAAAAAAAAAAAAA4QMAAAAAAADkAwAAAAAAAAAAAADkAwAAAAAAAOUDAAAAAAAAAAAAAOUDAAAAAAAA5gMAAAAAAAAAAAAA5gMAAAAAAADnAwAAAAAAAAAAAADnAwAAAAAAAOgDAAAAAAAAAAAAAA",
 					"AQAAAAAAAAABAAAA4AMAAAAAAADgAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					89,
+					26,
 					1,
 					"insert",
 					{
-						"characters": "txt"
+						"characters": " pf"
 					},
-					"AwAAAN4DAAAAAAAA3wMAAAAAAAAAAAAA3wMAAAAAAADgAwAAAAAAAAAAAADgAwAAAAAAAOEDAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA3gMAAAAAAADeAwAAAAAAAAAAAAAAAPC/"
+					"AwAAAOgDAAAAAAAA6QMAAAAAAAAAAAAA6QMAAAAAAADqAwAAAAAAAAAAAADqAwAAAAAAAOsDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6AMAAAAAAADoAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					92,
-					2,
-					"left_delete",
-					null,
-					"AgAAAAUEAAAAAAAABQQAAAAAAAABAAAAbgQEAAAAAAAABAQAAAAAAAABAAAAaQ",
-					"AQAAAAAAAAABAAAABgQAAAAAAAAGBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					93,
-					1,
-					"insert",
-					{
-						"characters": "txt"
-					},
-					"AwAAAAQEAAAAAAAABQQAAAAAAAAAAAAABQQAAAAAAAAGBAAAAAAAAAAAAAAGBAAAAAAAAAcEAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAABAQAAAAAAAAEBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					99,
-					7,
-					"left_delete",
-					null,
-					"BwAAAC4EAAAAAAAALgQAAAAAAAABAAAAOy0EAAAAAAAALQQAAAAAAAABAAAATywEAAAAAAAALAQAAAAAAAABAAAASSsEAAAAAAAAKwQAAAAAAAABAAAAdCoEAAAAAAAAKgQAAAAAAAABAAAAcykEAAAAAAAAKQQAAAAAAAABAAAAYSgEAAAAAAAAKAQAAAAAAAABAAAARg",
-					"AQAAAAAAAAABAAAALwQAAAAAAAAvBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					100,
-					1,
-					"insert",
-					{
-						"characters": "tara"
-					},
-					"BAAAACgEAAAAAAAAKQQAAAAAAAAAAAAAKQQAAAAAAAAqBAAAAAAAAAAAAAAqBAAAAAAAACsEAAAAAAAAAAAAACsEAAAAAAAALAQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAKAQAAAAAAAAoBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					101,
-					1,
-					"insert",
-					{
-						"characters": " ;"
-					},
-					"AgAAACwEAAAAAAAALQQAAAAAAAAAAAAALQQAAAAAAAAuBAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAALAQAAAAAAAAsBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					104,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAACgEAAAAAAAAKwQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAKAQAAAAAAAAuBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					107,
-					1,
-					"left_delete",
-					null,
-					"AQAAAAMBAAAAAAAAAwEAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAABAEAAAAAAAAEAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					110,
-					1,
-					"left_delete",
-					null,
-					"AQAAAPEAAAAAAAAA8QAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAA8gAAAAAAAADyAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					113,
-					1,
-					"left_delete",
-					null,
-					"AQAAAN8AAAAAAAAA3wAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAA4AAAAAAAAADgAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					116,
-					1,
-					"left_delete",
-					null,
-					"AQAAAM4AAAAAAAAAzgAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAzwAAAAAAAADPAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					119,
-					1,
-					"left_delete",
-					null,
-					"AQAAALkAAAAAAAAAuQAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAugAAAAAAAAC6AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					122,
-					1,
-					"left_delete",
-					null,
-					"AQAAAKUAAAAAAAAApQAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAApgAAAAAAAACmAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					125,
-					1,
-					"left_delete",
-					null,
-					"AQAAAJMAAAAAAAAAkwAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAlAAAAAAAAACUAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					128,
-					1,
-					"insert",
-					{
-						"characters": "/"
-					},
-					"AQAAAAEAAAAAAAAAAgAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					131,
-					1,
-					"left_delete",
-					null,
-					"AQAAACYAAAAAAAAAJgAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAJwAAAAAAAAAnAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					134,
-					1,
-					"left_delete",
-					null,
-					"AQAAADgAAAAAAAAAOAAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAOQAAAAAAAAA5AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					137,
-					1,
-					"left_delete",
-					null,
-					"AQAAAEgAAAAAAAAASAAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAASQAAAAAAAABJAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					140,
-					1,
-					"left_delete",
-					null,
-					"AQAAAFYAAAAAAAAAVgAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAVwAAAAAAAABXAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					143,
-					1,
-					"left_delete",
-					null,
-					"AQAAAG4AAAAAAAAAbgAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAbwAAAAAAAABvAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					146,
-					1,
-					"left_delete",
-					null,
-					"AQAAAH0AAAAAAAAAfQAAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAfgAAAAAAAAB+AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					149,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAEkEAAAAAAAATAQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAASQQAAAAAAABSBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					152,
-					1,
-					"insert",
-					{
-						"characters": "int"
-					},
-					"AwAAAJsDAAAAAAAAnAMAAAAAAAAAAAAAnAMAAAAAAACdAwAAAAAAAAAAAACdAwAAAAAAAJ4DAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAmwMAAAAAAACbAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					153,
-					1,
-					"insert",
-					{
-						"characters": " n"
-					},
-					"AgAAAJ4DAAAAAAAAnwMAAAAAAAAAAAAAnwMAAAAAAACgAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAngMAAAAAAACeAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					154,
-					1,
-					"insert",
-					{
-						"characters": " ;"
-					},
-					"AgAAAKADAAAAAAAAoQMAAAAAAAAAAAAAoQMAAAAAAACiAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAoAMAAAAAAACgAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					155,
-					1,
-					"insert",
-					{
-						"characters": "\ncin>>n"
-					},
-					"CAAAAKIDAAAAAAAAowMAAAAAAAAAAAAAowMAAAAAAACnAwAAAAAAAAAAAACnAwAAAAAAAKgDAAAAAAAAAAAAAKgDAAAAAAAAqQMAAAAAAAAAAAAAqQMAAAAAAACqAwAAAAAAAAAAAACqAwAAAAAAAKsDAAAAAAAAAAAAAKsDAAAAAAAArAMAAAAAAAAAAAAArAMAAAAAAACtAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAogMAAAAAAACiAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					156,
-					1,
-					"insert",
-					{
-						"characters": " ;"
-					},
-					"AgAAAK0DAAAAAAAArgMAAAAAAAAAAAAArgMAAAAAAACvAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAArQMAAAAAAACtAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					157,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AgAAAK8DAAAAAAAAsAMAAAAAAAAAAAAAsAMAAAAAAAC0AwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAArwMAAAAAAACvAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					158,
-					1,
-					"insert",
-					{
-						"characters": "for"
-					},
-					"AwAAALQDAAAAAAAAtQMAAAAAAAAAAAAAtQMAAAAAAAC2AwAAAAAAAAAAAAC2AwAAAAAAALcDAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAtAMAAAAAAAC0AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					159,
+					27,
 					1,
 					"insert_snippet",
 					{
 						"contents": "($0)"
 					},
-					"AQAAALcDAAAAAAAAuQMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAtwMAAAAAAAC3AwAAAAAAAAAAAAAAAPC/"
+					"AQAAAOsDAAAAAAAA7QMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6wMAAAAAAADrAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					160,
-					1,
-					"insert",
-					{
-						"characters": "i=0"
-					},
-					"AwAAALgDAAAAAAAAuQMAAAAAAAAAAAAAuQMAAAAAAAC6AwAAAAAAAAAAAAC6AwAAAAAAALsDAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAuAMAAAAAAAC4AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					161,
-					1,
-					"insert",
-					{
-						"characters": " ;"
-					},
-					"AgAAALsDAAAAAAAAvAMAAAAAAAAAAAAAvAMAAAAAAAC9AwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAuwMAAAAAAAC7AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					162,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAL0DAAAAAAAAvgMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAvQMAAAAAAAC9AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					166,
-					1,
-					"insert",
-					{
-						"characters": "inty"
-					},
-					"BAAAALgDAAAAAAAAuQMAAAAAAAAAAAAAuQMAAAAAAAC6AwAAAAAAAAAAAAC6AwAAAAAAALsDAAAAAAAAAAAAALsDAAAAAAAAvAMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAuAMAAAAAAAC4AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					167,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAALwDAAAAAAAAvQMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAvAMAAAAAAAC8AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					168,
-					2,
-					"left_delete",
-					null,
-					"AgAAALwDAAAAAAAAvAMAAAAAAAABAAAAILsDAAAAAAAAuwMAAAAAAAABAAAAeQ",
-					"AQAAAAAAAAABAAAAvQMAAAAAAAC9AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					169,
-					1,
-					"insert",
-					{
-						"characters": "t"
-					},
-					"AQAAALsDAAAAAAAAvAMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAuwMAAAAAAAC7AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					170,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAALwDAAAAAAAAvQMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAvAMAAAAAAAC8AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					171,
-					2,
-					"left_delete",
-					null,
-					"AgAAALwDAAAAAAAAvAMAAAAAAAABAAAAILsDAAAAAAAAuwMAAAAAAAABAAAAdA",
-					"AQAAAAAAAAABAAAAvQMAAAAAAAC9AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					172,
-					1,
-					"insert",
-					{
-						"characters": "t"
-					},
-					"AQAAALsDAAAAAAAAvAMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAuwMAAAAAAAC7AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					173,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAALwDAAAAAAAAvQMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAvAMAAAAAAAC8AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					176,
-					1,
-					"left_delete",
-					null,
-					"AQAAALsDAAAAAAAAuwMAAAAAAAABAAAAdA",
-					"AQAAAAAAAAABAAAAvAMAAAAAAAC8AwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					178,
-					1,
-					"insert",
-					{
-						"characters": " i<n"
-					},
-					"BAAAAMEDAAAAAAAAwgMAAAAAAAAAAAAAwgMAAAAAAADDAwAAAAAAAAAAAADDAwAAAAAAAMQDAAAAAAAAAAAAAMQDAAAAAAAAxQMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAwQMAAAAAAADBAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					179,
-					1,
-					"insert",
-					{
-						"characters": " ;"
-					},
-					"AgAAAMUDAAAAAAAAxgMAAAAAAAAAAAAAxgMAAAAAAADHAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAxQMAAAAAAADFAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					180,
-					1,
-					"insert",
-					{
-						"characters": " i++"
-					},
-					"BAAAAMcDAAAAAAAAyAMAAAAAAAAAAAAAyAMAAAAAAADJAwAAAAAAAAAAAADJAwAAAAAAAMoDAAAAAAAAAAAAAMoDAAAAAAAAywMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAxwMAAAAAAADHAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					182,
-					1,
-					"left_delete",
-					null,
-					"AQAAAMsDAAAAAAAAywMAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAzAMAAAAAAADMAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					184,
-					1,
-					"insert",
-					{
-						"characters": "cout<<i<"
-					},
-					"CAAAAMwDAAAAAAAAzQMAAAAAAAAAAAAAzQMAAAAAAADOAwAAAAAAAAAAAADOAwAAAAAAAM8DAAAAAAAAAAAAAM8DAAAAAAAA0AMAAAAAAAAAAAAA0AMAAAAAAADRAwAAAAAAAAAAAADRAwAAAAAAANIDAAAAAAAAAAAAANIDAAAAAAAA0wMAAAAAAAAAAAAA0wMAAAAAAADUAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAzAMAAAAAAADMAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					185,
-					1,
-					"insert",
-					{
-						"characters": "<"
-					},
-					"AQAAANQDAAAAAAAA1QMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA1AMAAAAAAADUAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					186,
+					28,
 					1,
 					"insert_snippet",
 					{
 						"contents": "\"$0\""
 					},
-					"AQAAANUDAAAAAAAA1wMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA1QMAAAAAAADVAwAAAAAAAAAAAAAAAPC/"
+					"AQAAAOwDAAAAAAAA7gMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7AMAAAAAAADsAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					187,
+					29,
 					1,
 					"insert",
 					{
-						"characters": " "
+						"characters": "Second"
 					},
-					"AQAAANYDAAAAAAAA1wMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA1gMAAAAAAADWAwAAAAAAAAAAAAAAAPC/"
+					"BgAAAO0DAAAAAAAA7gMAAAAAAAAAAAAA7gMAAAAAAADvAwAAAAAAAAAAAADvAwAAAAAAAPADAAAAAAAAAAAAAPADAAAAAAAA8QMAAAAAAAAAAAAA8QMAAAAAAADyAwAAAAAAAAAAAADyAwAAAAAAAPMDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7QMAAAAAAADtAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					189,
+					30,
 					1,
 					"insert",
 					{
-						"characters": " ;"
+						"characters": "\\n"
 					},
-					"AgAAANgDAAAAAAAA2QMAAAAAAAAAAAAA2QMAAAAAAADaAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA2AMAAAAAAADYAwAAAAAAAAAAAAAAAPC/"
+					"AgAAAPMDAAAAAAAA9AMAAAAAAAAAAAAA9AMAAAAAAAD1AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8wMAAAAAAADzAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					190,
-					1,
-					"insert",
-					{
-						"characters": "\nc"
-					},
-					"BQAAANoDAAAAAAAA2wMAAAAAAAAAAAAA2wMAAAAAAADfAwAAAAAAAAAAAADbAwAAAAAAANsDAAAAAAAABAAAACAgICDbAwAAAAAAAOADAAAAAAAAAAAAAOADAAAAAAAA4QMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA2gMAAAAAAADaAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					191,
-					2,
-					"left_delete",
-					null,
-					"AgAAAOADAAAAAAAA4AMAAAAAAAABAAAAY98DAAAAAAAA3wMAAAAAAAABAAAACQ",
-					"AQAAAAAAAAABAAAA4QMAAAAAAADhAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					192,
-					1,
-					"insert",
-					{
-						"characters": "cout<"
-					},
-					"BQAAAN8DAAAAAAAA4AMAAAAAAAAAAAAA4AMAAAAAAADhAwAAAAAAAAAAAADhAwAAAAAAAOIDAAAAAAAAAAAAAOIDAAAAAAAA4wMAAAAAAAAAAAAA4wMAAAAAAADkAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA3wMAAAAAAADfAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					193,
-					1,
-					"insert",
-					{
-						"characters": "<endl"
-					},
-					"BQAAAOQDAAAAAAAA5QMAAAAAAAAAAAAA5QMAAAAAAADmAwAAAAAAAAAAAADmAwAAAAAAAOcDAAAAAAAAAAAAAOcDAAAAAAAA6AMAAAAAAAAAAAAA6AMAAAAAAADpAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA5AMAAAAAAADkAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					194,
+					32,
 					1,
 					"insert",
 					{
 						"characters": " ;"
 					},
-					"AgAAAOkDAAAAAAAA6gMAAAAAAAAAAAAA6gMAAAAAAADrAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA6QMAAAAAAADpAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					199,
-					1,
-					"insert",
-					{
-						"characters": "using"
-					},
-					"BQAAAIcDAAAAAAAAiAMAAAAAAAAAAAAAiAMAAAAAAACJAwAAAAAAAAAAAACJAwAAAAAAAIoDAAAAAAAAAAAAAIoDAAAAAAAAiwMAAAAAAAAAAAAAiwMAAAAAAACMAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAhwMAAAAAAACHAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					200,
-					1,
-					"insert",
-					{
-						"characters": " namesp"
-					},
-					"BwAAAIwDAAAAAAAAjQMAAAAAAAAAAAAAjQMAAAAAAACOAwAAAAAAAAAAAACOAwAAAAAAAI8DAAAAAAAAAAAAAI8DAAAAAAAAkAMAAAAAAAAAAAAAkAMAAAAAAACRAwAAAAAAAAAAAACRAwAAAAAAAJIDAAAAAAAAAAAAAJIDAAAAAAAAkwMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAjAMAAAAAAACMAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					201,
-					1,
-					"insert",
-					{
-						"characters": "ace"
-					},
-					"AwAAAJMDAAAAAAAAlAMAAAAAAAAAAAAAlAMAAAAAAACVAwAAAAAAAAAAAACVAwAAAAAAAJYDAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAkwMAAAAAAACTAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					202,
-					1,
-					"insert",
-					{
-						"characters": " std"
-					},
-					"BAAAAJYDAAAAAAAAlwMAAAAAAAAAAAAAlwMAAAAAAACYAwAAAAAAAAAAAACYAwAAAAAAAJkDAAAAAAAAAAAAAJkDAAAAAAAAmgMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAlgMAAAAAAACWAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					203,
-					1,
-					"insert",
-					{
-						"characters": " ;"
-					},
-					"AgAAAJoDAAAAAAAAmwMAAAAAAAAAAAAAmwMAAAAAAACcAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAmgMAAAAAAACaAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					204,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AQAAAJwDAAAAAAAAnQMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAnAMAAAAAAACcAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					215,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAEADAAAAAAAAQwMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAQAMAAAAAAABQAwAAAAAAAAAAAAAAAPC/"
+					"AgAAAPcDAAAAAAAA+AMAAAAAAAAAAAAA+AMAAAAAAAD5AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9wMAAAAAAAD3AwAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		},
 		{
-			"file": "input.txt",
+			"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/input.txt",
 			"settings":
 			{
-				"buffer_size": 1,
+				"buffer_size": 22,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
 				[
-					10,
+					3,
 					1,
-					"insert",
-					{
-						"characters": "3"
-					},
-					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAuAAAAMwo2CkFDQkNCQwo3CkFBQUFGUEMKMjIKRkVBREJCREZGRURGRkZESEhIQURDQw",
+					"AQAAAAAAAAABAAAALgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAFQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 				]
 			]
 		},
 		{
-			"file": "output.txt",
+			"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/output.txt",
 			"settings":
 			{
-				"buffer_size": 7,
+				"buffer_size": 38,
 				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
 				[
-					2,
+					3,
+					4,
+					"left_delete",
+					null,
+					"BAAAAAMAAAAAAAAAAwAAAAAAAAACAAAACjQCAAAAAAAAAAIAAAAAAAAAAQAAADEBAAAAAAAAAAEAAAAAAAAAAQAAAAoAAAAAAAAAAAAAAAAAAAAAAQAAADM",
+					"AQAAAAAAAAABAAAABQAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
 					1,
 					"revert",
 					null,
-					"AgAAAAAAAAAAAAAAAAAAAAAAAAAHAAAAMCAxIDIgCgAAAAAAAAAABwAAAAAAAAAAAAAA",
+					"AgAAAAAAAAAAAAAAAAAAAAAAAAABAAAACgAAAAAAAAAAJgAAAAAAAAAAAAAA",
 					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
 				]
 			]
@@ -949,12 +420,48 @@
 	"expanded_folders":
 	[
 		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice",
-		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3",
-		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/A",
-		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/B"
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A"
 	],
 	"file_history":
 	[
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /B/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /B/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /B/B.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/E/E",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /A/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /A/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/D/D.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /A/A.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/E/E.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/E/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/E/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/D/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/D/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/C/C.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/C/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/C/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/B/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/B/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/B/B.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/A/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/A/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/A/A.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/D/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/D/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/D/D.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/C/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/C/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/B/B.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/C/C.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/B/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/B/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/C/A.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/A/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/A/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/A/A.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/A/A",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/B/A.cpp",
 		"/Users/fayjulislammanik/Desktop/untitled folder/Problem-Solving/Codeforces Round 916 (Div. 3)/A/input.txt",
 		"/Users/fayjulislammanik/Library/Application Support/Sublime Text/Packages/User/untitled",
 		"/Users/fayjulislammanik/Desktop/untitled folder/Problem-Solving/Codeforces Round 916 (Div. 3)/A/firstProgram.cpp",
@@ -1005,29 +512,30 @@
 			[
 				{
 					"buffer": 0,
-					"file": "A.cpp",
+					"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/A.cpp",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1357,
+						"buffer_size": 1341,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								904,
-								904
+								0,
+								1341
 							]
 						],
 						"settings":
 						{
-							"auto_name": "A",
-							"syntax": "Packages/C++/C++.sublime-syntax"
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 842.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1041,20 +549,20 @@
 			[
 				{
 					"buffer": 1,
-					"file": "input.txt",
+					"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/input.txt",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1,
+						"buffer_size": 22,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								21,
+								21
 							]
 						],
 						"settings":
@@ -1076,12 +584,12 @@
 			[
 				{
 					"buffer": 2,
-					"file": "output.txt",
+					"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/output.txt",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7,
+						"buffer_size": 38,
 						"regions":
 						{
 						},
@@ -1141,7 +649,7 @@
 		"cols":
 		[
 			0.0,
-			0.64464934593,
+			0.671132112868,
 			1.0
 		],
 		"rows":
@@ -1223,7 +731,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 274.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
