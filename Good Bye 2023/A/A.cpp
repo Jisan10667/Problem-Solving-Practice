@@ -45,40 +45,72 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
+map<int,int>mp ;
+int dp[16] ;
+int solve(vector<int>& coins,int amount){
+        if(amount==0)return 0 ;
+        if(amount<0)return INT_MAX ;
+        if(dp[amount]!=-1)return dp[amount] ;
+
+        int n=coins.size(), cnt=INT_MAX ;
+        for(int i=0 ; i<n ; i++){
+            int ans=solve(coins,amount-coins[i]) ;
+            if(ans!=INT_MAX)cnt=min(ans+1,cnt) ; 
+        }
+
+        dp[amount]=cnt ;
+        mp[amount]=cnt ;
+        return dp[amount] ;
+    }
+
+
 void solve()
-{
-  ll n, k, i ;
-  cin>>n>>k ;
+{ 
+   
+  
+  
+  
+    
+  int n ;
+  cin>>n ;
+  dp[0]=0 ; 
+  //for(int i=0 ; i<=15 ; i++)cout<<dp[i]<<endl;
+   
+  int count=dp[n%15] ;
 
-  ll prod=1 ;
+  if(n>15)count+=n/15 ;
+  cout<<count<<endl;
+  
 
-  for(i=0 ; i<n ; i++){
-   ll x ;
-   cin>>x ;
-   prod*=x ;
-  }
-  if(2023%prod)N ;
-  else{
-   Y ;
-   cout<<2023/prod<<" " ;
-   for(i=0 ; i<k-1 ; i++)cout<<1<<" " ;
-      cout<<endl ;
-  }
+  
 
+  
 }
 
 int main(){
-// #ifndef ONLINE_JUDGE
-//    freopen("input.txt", "r", stdin);
-//    freopen("output.txt", "w", stdout);
-// #endif
+#ifndef ONLINE_JUDGE
+   freopen("input.txt", "r", stdin);
+   freopen("output.txt", "w", stdout);
+#endif
     
-//     tara ;
+    tara ;
    
     int t;
     t = 1;
     
     cin >> t;
+
+    vector<int> coins = {1, 3, 6, 10, 15};
+  int coinArray[5]; // Ensure the array size matches the number of elements in the vector
+    for(int i = 0; i < 5; ++i) {
+        coinArray[i] = coins[i];
+    }
+
+
+    int amount=15 ;
+    
+    memset(dp,-1,sizeof(dp)) ;
+    int res=solve(coins,amount) ;
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");
