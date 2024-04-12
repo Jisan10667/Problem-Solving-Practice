@@ -45,45 +45,40 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std;
 
-bool canMakeAllOnes(const string& s, int k) {
-    int len=s.length(), i, j ;
 
-    for(i=0 ; i<len ; i++){
-        if(s[i]=='1'){
-            int ses=i+k, suru=i, zero=-1 ;
-            if(i+k<)
-            while(suru<ses){
-                if(s[suru]=='1')s[suru]='0' ;
-                else {
-                    s[suru]='1' ;
-                    if(zero==-1)zero=suru ;
-                }
-                suru++ ;
-            }
-            if(zero==-1)i=ses-1 ;
-            else i=zero-1 ;
-        }
-    }
-
-}
 
 void solve() {
-   int n;
-    string s;
-    cin >> n >> s;
+   int n, k, i ;
+   cin>>n ;
 
-    int left = 1, right = n, ans = 1;
-    while(left <= right) {
-        int mid = left + (right - left) / 2;
-        if(canMakeAllOnes(s, mid)) {
-            ans = mid; // Found a viable k
-            left = mid + 1; // Try for a larger k
-        } else {
-            right = mid - 1; // Reduce k
-        }
+   unordered_map<int,int>mp ;
+   int ara[n] ;
+
+   for(i=0 ; i<n ; i++)cin>>ara[i] ;
+
+   for(i=0 ; i<n ; i++)mp[ara[i]]++ ;
+   
+   int ans, maxi=*max_element(ara,ara+n) ; 
+
+   bool alice=0 ;
+   for(i=0 ; i<=maxi ; i++){
+    if(mp[i]==0){
+        ans=i ;
+        break ;
     }
+    if(mp[i]>1)ans=i+1 ;
+    else{
+        if(!alice){
+            ans=i+1 ;
+            alice=1 ;
+        }
+        else break ;
+    }
+   }
 
-    cout << ans << endl;
+   cout<<ans<<endl; 
+
+
 }
 
 int main() {
