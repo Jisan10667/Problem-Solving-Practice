@@ -39,41 +39,31 @@
 #define ll_INF 1LL<<62
  
 // const int M=1e5;
-const int MAXN = 1000000;
 
 int dx[] = {-1, 0, 0, 1};
 int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-vector<int> f ;
-vector<long long> prefix_sum(MAXN + 1, 0);
-
-int gcd(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
-
-void compute_f() {
-    for (int x = 1; x <= MAXN; ++x) {
-        for (int i = 1; i <= x; ++i) {
-            if (gcd(i, x) == 1) {
-                f[x] += i;
-            }
-        }
-    }
-}
 void solve()
 {  
-    int L, R;
-    cin >> L >> R;
+   ll n ;
+   cin>>n ;
+   ll ara[n], mini=1LL<<62, i, j ;
 
-    long long result = prefix_sum[R] - (L > 1 ? prefix_sum[L -1] : 0);
-    cout << result << "\n";
+   for(i=0 ; i<n ; i++)cin>>ara[i], mini=min(mini,ara[i]) ;
+   vector<ll>ans ;
+   ans.push_back(ara[0]) ; 
+
+   for(i=1 ; i<n ; i++){
+        ans.push_back(mini) ;
+        ans.push_back(ara[i]) ;
+   }
+   cout<<ans.size()<<endl ;
+
+   for(int x:ans)cout<<x<<" " ;
+    cout<<endl;
+
    
 }
 
@@ -84,13 +74,7 @@ int main(){
 #endif
     
      tara ;
-    compute_f();
-    // Build prefix sum   of f
-    for (int i = 1; i <= MAXN; i++) {
-        prefix_sum[i] = prefix_sum[i - 1] + f[i];
-        //cout<<prefix_sum[i]<<endl;
-    }
-
+   
     int t;
     t = 1;
     

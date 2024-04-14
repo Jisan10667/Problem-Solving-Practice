@@ -2,7 +2,7 @@
 #include<complex>
 #include<queue>
 #include<set>
-#include<unordered_set>
+#include<unordered_map>
 #include<list>
 #include<chrono>
 #include<random>
@@ -24,7 +24,7 @@
 #define debug(x)  cout<<'>'<<#x<<":"<<x<<endl
 #define tara ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 #define Y printf("YES\n")
-#define N printf("NO\n")
+
 #define ll long long
 #define lll __int128
 #define ull unsigned long long
@@ -45,39 +45,63 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-void solve()
-{  
-   ll n ;
-   cin>>n ;
-   ll ara[n], mini=1LL<<62, i, j ;
+const int MAXN = 1000;
+vector<long long> f(MAXN + 1, 0);
+vector<long long> prefix(MAXN + 1, 0);
+ vector<int> totients ;
 
-   for(i=0 ; i<n ; i++)cin>>ara[i], mini=min(mini,ara[i]) ;
-   vector<ll>ans ;
-   ans.push_back(ara[0]) ; 
+vector<int> calculateTotient(int n) {
+    vector<int> phi(n + 1);
+    // Initialize phi[i] with i
+    for (int i = 0; i <= n; ++i) {
+        phi[i] = i;
+    }
 
-   for(i=1 ; i<n ; i++){
-        ans.push_back(mini) ;
-        ans.push_back(ara[i]) ;
-   }
-   cout<<ans.size()<<endl ;
+    // Using a sieve-like approach to compute totient values
+    for (int i = 2; i <= n; ++i) {
+        if (phi[i] == i) { // i is a prime number
+            for (int j = i; j <= n; j += i) {
+                phi[j] -= phi[j] / i; // Decrease multiples of i by factor of (1 - 1/i)
+            }
+        }
+    }
 
-   for(int x:ans)cout<<x<<" " ;
-    cout<<endl;
-
-   
+    return phi;
+}
+long long sumCoprimes(int n, const vector<int>& phi) {
+    long long sum = 0;
+    for (int i = 1; i < n; ++i) {
+        if (gcd(n, i) == 1) {
+            sum += i;
+        }
+    }
+    return sum;
 }
 
+void solve() {
+   int l, r ;
+   cin>>l>>r ;
+
+   cout<<prefix[r]-prefix[l-1]+(l==1?1:0)<<endl ;
+}
 int main(){
 #ifndef ONLINE_JUDGE
    freopen("input.txt", "r", stdin);
    freopen("output.txt", "w", stdout);
 #endif
     
-     tara ;
+     //tara ;
    
     int t;
     t = 1;
-    
+    totients = calculateTotient(MAXN);
+    prefix[0]=0 ;
+    for (int i = 1; i <= MAXN; ++i) {
+        long long sum = sumCoprimes(i, totients);
+        //cout << "Sum of numbers coprime with " << i << " = " << sum << endl;
+        prefix[i]=prefix[i-1]+sum ;
+    }
+
     cin >> t;
 
     for(int i=0; i<t; i++) {

@@ -22,8 +22,7 @@
 #define F first
 #define S second
 #define debug(x)  cout<<'>'<<#x<<":"<<x<<endl
-#define tara ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0)
-#define Y printf("YES\n")
+
 #define N printf("NO\n")
 #define ll long long
 #define lll __int128
@@ -38,13 +37,6 @@
 #define INF 1<<30
 #define ll_INF 1LL<<62
  
-// const int M=1e5;
-
-int dx[] = {-1, 0, 0, 1};
-int dy[] = {0, -1, 1, 0};
-
-using namespace std ;
-
 const int M=1e6+5;
 int phi[M];
 ll result[M];
@@ -91,7 +83,7 @@ int main(){
     freopen("output.txt", "w", stdout);
 #endif
 
-    tara;
+    
 
     computeTotient();
     precomputeResults();

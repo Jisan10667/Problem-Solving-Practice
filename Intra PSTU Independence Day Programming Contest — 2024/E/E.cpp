@@ -39,42 +39,33 @@
 #define ll_INF 1LL<<62
  
 // const int M=1e5;
-const int MAXN = 1000000;
 
 int dx[] = {-1, 0, 0, 1};
 int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-vector<int> f ;
-vector<long long> prefix_sum(MAXN + 1, 0);
-
-int gcd(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
-
-void compute_f() {
-    for (int x = 1; x <= MAXN; ++x) {
-        for (int i = 1; i <= x; ++i) {
-            if (gcd(i, x) == 1) {
-                f[x] += i;
-            }
-        }
-    }
-}
 void solve()
 {  
-    int L, R;
-    cin >> L >> R;
-
-    long long result = prefix_sum[R] - (L > 1 ? prefix_sum[L -1] : 0);
-    cout << result << "\n";
-   
+  int n;
+        cin >> n;
+ 
+        vector<int> a(n + 1), pref(n + 1, 0);
+        map<int, int> mp;
+        mp[0] = 1;
+        int ans = 0;
+        for (int i = 1; i <= n; i++) {
+            cin >> a[i];
+            if (i % 2) a[i] *= -1;
+            pref[i] = pref[i - 1] + a[i];
+            if (i > 1) {
+                ans |= (mp[pref[i]] > 0);
+            }
+            mp[pref[i]]++;
+        }
+ 
+        if (ans) cout << "YES\n";
+        else cout << "NO\n"; 
 }
 
 int main(){
@@ -84,13 +75,7 @@ int main(){
 #endif
     
      tara ;
-    compute_f();
-    // Build prefix sum   of f
-    for (int i = 1; i <= MAXN; i++) {
-        prefix_sum[i] = prefix_sum[i - 1] + f[i];
-        //cout<<prefix_sum[i]<<endl;
-    }
-
+   
     int t;
     t = 1;
     
