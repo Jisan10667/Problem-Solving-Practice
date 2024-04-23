@@ -45,38 +45,45 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std;
 
+bool canMakeAllOnes(const string& s, int k) {
+    int len=s.length(), i, j ;
 
+    for(i=0 ; i<len ; i++){
+        if(s[i]=='1'){
+            int ses=i+k, suru=i, zero=-1 ;
+            if(i+k<)
+            while(suru<ses){
+                if(s[suru]=='1')s[suru]='0' ;
+                else {
+                    s[suru]='1' ;
+                    if(zero==-1)zero=suru ;
+                }
+                suru++ ;
+            }
+            if(zero==-1)i=ses-1 ;
+            else i=zero-1 ;
+        }
+    }
+
+}
 
 void solve() {
-   int n, k ;
-   cin>>n>>k ;
-   unordered_map<char,int>mp ;
+   int n;
+    string s;
+    cin >> n >> s;
 
-   string s ;
-   cin>>s ;
-   for(char x:s)mp[x]++ ;
-
-   if((n-k)&1){
-        int sum=0 ;
-    for(auto lol:mp){
-        if(lol.S%2)sum++ ;
-
+    int left = 1, right = n, ans = 1;
+    while(left <= right) {
+        int mid = left + (right - left) / 2;
+        if(canMakeAllOnes(s, mid)) {
+            ans = mid; // Found a viable k
+            left = mid + 1; // Try for a larger k
+        } else {
+            right = mid - 1; // Reduce k
+        }
     }
 
-    if(sum>k+1)N ;
-    else Y ;
-   }
-   else{
-    int sum=0 ;
-    for(auto lol:mp){
-        if(lol.S%2)sum++ ;
-    }
-
-    if(sum>k)N ;
-    else Y ;
-   } 
-
-
+    cout << ans << endl;
 }
 
 int main() {

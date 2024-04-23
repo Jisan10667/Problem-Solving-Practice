@@ -2,7 +2,7 @@
 #include<complex>
 #include<queue>
 #include<set>
-#include<unordered_map>
+#include<unordered_set>
 #include<list>
 #include<chrono>
 #include<random>
@@ -17,7 +17,7 @@
 #include<string>
 #include<stdlib.h>
 #include<iomanip>
-
+ 
 #define PI acos(-1)
 #define F first
 #define S second
@@ -37,62 +37,53 @@
 #define endl '\n'
 #define INF 1<<30
 #define ll_INF 1LL<<62
-
+ 
 // const int M=1e5;
 
 int dx[] = {-1, 0, 0, 1};
 int dy[] = {0, -1, 1, 0};
 
-using namespace std;
+using namespace std ;
 
-
-
-void solve() {
-   int n, k ;
+void solve()
+{  
+   ll n, k ;
    cin>>n>>k ;
-   unordered_map<char,int>mp ;
+   ll a[n], b[n] ;
+   
+   for(ll i=0 ; i<n ; i++)cin>>a[i] ;
+   for(ll i=0 ; i<n ; i++)cin>>b[i] ;
 
-   string s ;
-   cin>>s ;
-   for(char x:s)mp[x]++ ;
+   ll sum=0, ans=0, maxi=-1 ;
 
-   if((n-k)&1){
-        int sum=0 ;
-    for(auto lol:mp){
-        if(lol.S%2)sum++ ;
+   for(ll i=0 ; i<n && k>0 ; i++ ){
+      sum+=a[i] ;
+      k-- ;
+      maxi=max(maxi,b[i]) ;
 
-    }
-
-    if(sum>k+1)N ;
-    else Y ;
+      ans=max(ans,sum+k*maxi*1ll) ;
    }
-   else{
-    int sum=0 ;
-    for(auto lol:mp){
-        if(lol.S%2)sum++ ;
-    }
-
-    if(sum>k)N ;
-    else Y ;
-   } 
-
+   cout<<ans<<endl ;
 
 }
 
-int main() {
+int main(){
 #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
+   freopen("input.txt", "r", stdin);
+   freopen("output.txt", "w", stdout);
 #endif
-
-    tara;
-
+    
+     tara ;
+   
     int t;
+    t = 1;
+    
     cin >> t;
 
-    while (t--) {
+    for(int i=0; i<t; i++) {
+        // if(i) printf("\n");
+        // cout << "Case " << i+1 << ": ";
         solve();
     }
-
     return 0;
 }

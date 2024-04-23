@@ -45,7 +45,7 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-const int MAXN = 1000;
+const int MAXN = 200004;
 vector<long long> f(MAXN + 1, 0);
 vector<long long> prefix(MAXN + 1, 0);
  vector<int> totients ;
