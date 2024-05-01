@@ -45,29 +45,34 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-string decryptCaesarCipher(std::string text, int shift) {
-    for (int i = 0; i < text.length(); i++) {
-        if (isalpha(text[i])) { // Check if the character is an alphabet
-            char base = islower(text[i]) ? 'a' : 'A';
-            text[i] = (text[i] - base - shift + 26) % 26 + base; // Decrypt character
-        }
-    }
-    return text;
-}
-
-
 void solve()
 {  
-   string cipher = "odroboewscdrolocdcwkbdmyxdbkmdzvkdpybwyeddrobo";
-    cout << "Original Cipher Text: " << cipher << endl;
+   int n, i, j ;
+   cin>>n ;
+   char trump ;
+   cin>>trump ;
 
-    // Try all possible shifts from 1 to 25
-    for (int shift = 1; shift < 26; shift++) {
-        string decryptedText = decryptCaesarCipher(cipher, shift);
-        cout << "Shift " << shift << ": " << decryptedText << endl;
-    }
-   
-   
+   vector<string>card ;
+   vector<string>normal, trum, baki, c, d ;
+   for(i=0 ; i<2*n ; i++){
+      string s ;
+      cin>>s ;
+      card.push_back(s) ;
+      if(s.back()==trump){
+         trum.push_back(s) ;
+      }
+      else{
+         
+      }
+   }
+
+   sort(trump.begin(), trump.end()) ;
+
+
+
+
+
+
 }
 
 int main(){

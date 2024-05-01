@@ -45,29 +45,29 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-string decryptCaesarCipher(std::string text, int shift) {
-    for (int i = 0; i < text.length(); i++) {
-        if (isalpha(text[i])) { // Check if the character is an alphabet
-            char base = islower(text[i]) ? 'a' : 'A';
-            text[i] = (text[i] - base - shift + 26) % 26 + base; // Decrypt character
-        }
-    }
-    return text;
+
+ll gcd(ll a, ll b){
+   if(b==0)return a ;
+   return gcd(b,a%b) ;
 }
-
-
 void solve()
 {  
-   string cipher = "odroboewscdrolocdcwkbdmyxdbkmdzvkdpybwyeddrobo";
-    cout << "Original Cipher Text: " << cipher << endl;
+   ll a, b ;
+   cin>>a>>b ;
 
-    // Try all possible shifts from 1 to 25
-    for (int shift = 1; shift < 26; shift++) {
-        string decryptedText = decryptCaesarCipher(cipher, shift);
-        cout << "Shift " << shift << ": " << decryptedText << endl;
-    }
-   
-   
+   ll gc=gcd(a,b) ;
+
+   ll ans=(a*b)/gc ;
+   ll maxi=max(a,b) ;
+   if(a==1 || b==1){
+      cout<<ans*a*b<<endl ;
+   }
+   else if(ans==maxi){
+      cout<<ans*2<<endl ;
+   }
+   else{
+      cout<<ans<<endl ;
+   }
 }
 
 int main(){
@@ -76,7 +76,7 @@ int main(){
    freopen("output.txt", "w", stdout);
 #endif
     
-     tara ;
+    // tara ;
    
     int t;
     t = 1;

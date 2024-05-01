@@ -45,39 +45,44 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-string decryptCaesarCipher(std::string text, int shift) {
-    for (int i = 0; i < text.length(); i++) {
-        if (isalpha(text[i])) { // Check if the character is an alphabet
-            char base = islower(text[i]) ? 'a' : 'A';
-            text[i] = (text[i] - base - shift + 26) % 26 + base; // Decrypt character
-        }
+int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = a % b;
+        a = b;
+        b = temp;
     }
-    return text;
+    return a;
 }
 
 
 void solve()
-{  
-   string cipher = "odroboewscdrolocdcwkbdmyxdbkmdzvkdpybwyeddrobo";
-    cout << "Original Cipher Text: " << cipher << endl;
+{ 
 
-    // Try all possible shifts from 1 to 25
-    for (int shift = 1; shift < 26; shift++) {
-        string decryptedText = decryptCaesarCipher(cipher, shift);
-        cout << "Shift " << shift << ": " << decryptedText << endl;
+    long long num_elements, max_limit;
+    cin >> num_elements >> max_limit;
+    long long total_pairs = 0;
+
+    for (int divisor = 1; divisor * divisor <= num_elements; divisor++) {
+        for (int increment = 1; (divisor + increment) * divisor <= num_elements && (divisor + increment) * increment <= max_limit; ++increment) {
+            if (std::gcd(divisor, increment) == 1) {
+                total_pairs += min(num_elements / (divisor + increment) / divisor, max_limit / (divisor + increment) / increment);
+            }
+        }
     }
-   
-   
+    cout << total_pairs << "\n";
+    
 }
+ 
+
 
 int main(){
-#ifndef ONLINE_JUDGE
+
+    #ifndef ONLINE_JUDGE
    freopen("input.txt", "r", stdin);
    freopen("output.txt", "w", stdout);
 #endif
     
      tara ;
-   
     int t;
     t = 1;
     

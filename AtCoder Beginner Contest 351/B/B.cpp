@@ -38,36 +38,46 @@
 #define INF 1<<30
 #define ll_INF 1LL<<62
  
-// const int M=1e5;
+const int M=2e5+10;
 
 int dx[] = {-1, 0, 0, 1};
 int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-string decryptCaesarCipher(std::string text, int shift) {
-    for (int i = 0; i < text.length(); i++) {
-        if (isalpha(text[i])) { // Check if the character is an alphabet
-            char base = islower(text[i]) ? 'a' : 'A';
-            text[i] = (text[i] - base - shift + 26) % 26 + base; // Decrypt character
-        }
-    }
-    return text;
+
+ll gcd(ll a, ll b){
+   if(b==0)return a ;
+   return gcd(b,a%b) ;
 }
+int n, m,ara[M],ans[M] ;
+string s ;
+
+
+
+int rec(int l,int r, int i){
+   if(l==r)return ans[i]=ara[l]%m ;
+
+   else if(s[i]=='L')return ans[i]=(rec(l+1,r,i+1)*ara[l])%m ;
+
+   else return ans[i]=(rec(l,r-1,i+1)*ara[r])%m ;
+}
+
 
 
 void solve()
 {  
-   string cipher = "odroboewscdrolocdcwkbdmyxdbkmdzvkdpybwyeddrobo";
-    cout << "Original Cipher Text: " << cipher << endl;
+   cin>>n>>m ;
 
-    // Try all possible shifts from 1 to 25
-    for (int shift = 1; shift < 26; shift++) {
-        string decryptedText = decryptCaesarCipher(cipher, shift);
-        cout << "Shift " << shift << ": " << decryptedText << endl;
-    }
+   for(int i=0 ; i<n ; i++)cin>>ara[i] ;
+
+   cin>>s  ;
    
-   
+   rec(0,n-1,0) ;
+
+   for(int i=0 ; i<n ; i++)cout<<ans[i]<<" " ;
+      cout<<endl ;
+
 }
 
 int main(){
@@ -76,7 +86,7 @@ int main(){
    freopen("output.txt", "w", stdout);
 #endif
     
-     tara ;
+    // tara ;
    
     int t;
     t = 1;
