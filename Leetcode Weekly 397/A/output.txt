@@ -1,0 +1,2 @@
+Maximum score for example 1: 9
+Maximum score for example 2: -1
