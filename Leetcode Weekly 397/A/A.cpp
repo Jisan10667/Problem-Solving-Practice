@@ -49,32 +49,29 @@ int maxScore(const vector<vector<int>>& grid) {
     int m = grid.size();
     int n = grid[0].size();
 
-    // Create a 2D vector for storing maximum future values from each cell
     vector<vector<int>> max_future_value(m, vector<int>(n));
 
-    // Initialize the last cell in max_future_value
     max_future_value[m-1][n-1] = grid[m-1][n-1];
 
-    // Fill in the last row (right to left)
+
     for (int j = n-2; j >= 0; j--) {
         max_future_value[m-1][j] = max(max_future_value[m-1][j+1], grid[m-1][j]);
     }
 
-    // Fill in the last column (bottom to top)
+    
     for (int i = m-2; i >= 0; i--) {
         max_future_value[i][n-1] = max(max_future_value[i+1][n-1], grid[i][n-1]);
     }
 
-    // Fill the rest of the max_future_value matrix
     for (int i = m-2; i >= 0; i--) {
         for (int j = n-2; j >= 0; j--) {
             max_future_value[i][j] = max(max(max_future_value[i+1][j], max_future_value[i][j+1]), grid[i][j]);
         }
     }
 
-    int max_score = numeric_limits<int>::min(); // Minimum integer
+    int max_score = -9999999 ;
 
-    // Calculate the maximum score
+    
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
             if (i < m-1) {
