@@ -45,38 +45,31 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+};
 
-ll gcd(ll a, ll b){
-   if(b==0)return a ;
-   return gcd(b,a%b) ;
+
+int maxDepth(TreeNode *root){
+   if(root==nullptr)return 0 ;
+   int left=maxDepth(root->left) ;
+   int right=maxDepth(root->right) ;
+   return max(left,right)+1 ;
+
 }
-int n, m,ara[M],ans[M] ;
-string s ;
-
-
-
-int rec(int l,int r, int i){
-   if(l==r)return ans[i]=ara[l]%m ;
-
-   else if(s[i]=='L')return ans[i]=(rec(l+1,r,i+1)*ara[l])%m ;
-
-   else return ans[i]=(rec(l,r-1,i+1)*ara[r])%m ;
-}
-
-
-
 void solve()
 {  
-   cin>>n>>m ;
-
-   for(int i=0 ; i<n ; i++)cin>>ara[i] ;
-
-   cin>>s  ;
+   TreeNode *root=new TreeNode(3) ;
+   root->left=new TreeNode(9) ;
+   root->right=new TreeNode(20) ;
+   root->right->left=new TreeNode(15) ;
+   root->right->right=new TreeNode(7) ;
    
-   rec(0,n-1,0) ;
-
-   for(int i=0 ; i<n ; i++)cout<<ans[i]<<" " ;
-      cout<<endl ;
+   cout<<maxDepth(root)<<endl ;
 
 }
 
@@ -91,7 +84,7 @@ int main(){
     int t;
     t = 1;
     
-    cin >> t;
+    //cin >> t;
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");

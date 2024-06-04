@@ -11,7 +11,7 @@
 #include<cmath>
 #include<string>
 #include<vector>
-#include<map>
+#include<unordered_map>
 #include<cstdio>
 #include<cstring>
 #include<string>
@@ -38,7 +38,7 @@
 #define INF 1<<30
 #define ll_INF 1LL<<62
  
-const int M=2e5;
+// const int M=1e5;
 
 int dx[] = {-1, 0, 0, 1};
 int dy[] = {0, -1, 1, 0};
@@ -46,33 +46,55 @@ int dy[] = {0, -1, 1, 0};
 using namespace std ;
 
 
-void solve()
-{  
-    int number;
-    long long sum = 0;
-
-    // Read numbers from stdin and compute the sum
-    while (cin >> number) {
-        sum += number;
-    }
-
-    // Output the sum
-    cout << "Sum of all numbers: " << sum << endl;
- 
-
+void solve(){ 
+       int n;
+        cin>>n;
+        int a[n];
+        int b[n];
+        for(int i = 0 ; i<n ; i++){
+            cin>>a[i];
+        }
+        for(int i = 0 ; i<n ; i++){
+            cin>>b[i];
+        }
+        
+        int m;
+        cin>>m;
+        unordered_map<int,int> mp;
+        for(int i = 0 ; i<m;i++){
+            int d;
+            cin>>d;
+            mp[d]++;
+        }
+        bool flg = true;
+        for(int i = 0 ; i<n ; i++){
+            if(a[i]!=b[i]){
+               if(mp[b[i]]>0){
+                  mp[b[i]]-- ;
+               }
+            }
+            else {
+               flg=false ;
+               break ;
+            }
+        }
+       
+        flg==1?Y:N ;
 }
 
 int main(){
-
+   #ifndef ONLINE_JUDGE
    freopen("input.txt", "r", stdin);
    freopen("output.txt", "w", stdout);
-
-     tara ;
+#endif
    
     int t;
     t = 1;
     
-    //cin >> t;
+    cin >> t;
+
+    
+  
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");

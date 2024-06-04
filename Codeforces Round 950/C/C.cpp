@@ -45,65 +45,25 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-struct TreeNode{
-   int val ;
-   TreeNode* left ;
-   TreeNode* right ;
-   TreeNode(int x):val(x),left(NULL),right(NULL){}
-};
-
-void inorder(TreeNode* root){
-   if(root!=NULL){
-      inorder(root->left) ;
-      cout<<root->val<<" " ;
-      inorder(root->right) ;
-   }
-}
-
-void preorder(TreeNode* root){
-   if(root!=NULL){
-       cout<<root->val<<" " ;
-      preorder(root->left) ;
-      preorder(root->right) ;
-   }
-}
-
-void postorder(TreeNode* root){
-   if(root!=NULL){
-      postorder(root->left) ;
-      postorder(root->right) ;
-      cout<<root->val<<" " ;
-   }
-}
-
-TreeNode* insertLevelOrder(vector<int>& nodes,TreeNode* root, int idx, int len){
-   if(idx<len){
-      TreeNode* tmp=new TreeNode(nodes[idx]) ;
-      root=tmp ;
-      root->left=insertLevelOrder(nodes,root->left, idx*2+1, len);
-      root->right=insertLevelOrder(nodes,root->right, idx*2+2, len);
-   }
-   return root ;
-}
-
 void solve()
 {  
-    vector<int> nodes = {1, 2, 3, 4, 5, 6, 7};
-    TreeNode* root=insertLevelOrder(nodes,root,0,nodes.size()) ;
+   ll n, k ;
+   cin>>n>>k ;
+   ll a[n], b[n] ;
+   
+   for(ll i=0 ; i<n ; i++)cin>>a[i] ;
+   for(ll i=0 ; i<n ; i++)cin>>b[i] ;
 
-    cout<<"inorder Traversal: ";
-    inorder(root) ;
-    cout<<endl ; 
+   ll sum=0, ans=0, maxi=-1 ;
 
+   for(ll i=0 ; i<n && k>0 ; i++ ){
+      sum+=a[i] ;
+      k-- ;
+      maxi=max(maxi,b[i]) ;
 
-    cout<<"preorder Traversal: ";
-    preorder(root) ;
-    cout<<endl ; 
-
-     cout<<"postorder Traversal: ";
-    postorder(root) ;
-    cout<<endl ; 
-
+      ans=max(ans,sum+k*maxi*1ll) ;
+   }
+   cout<<ans<<endl ;
 
 }
 
@@ -113,7 +73,7 @@ int main(){
    freopen("output.txt", "w", stdout);
 #endif
     
-    // tara ;
+     tara ;
    
     int t;
     t = 1;

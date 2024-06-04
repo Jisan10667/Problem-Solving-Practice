@@ -45,50 +45,52 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
+
+string multiply(string num1, string num2){
+   int len1=num1.length() ;
+   int len2=num2.length() ;
+
+   if(len1==0 || len2==0)return "0" ;
+
+   vector<int>res(len1+len2,0) ;
+
+   int i_n1=0;
+
+
+   for(int i=len1-1 ; i>=0 ; i--){
+
+      int n1=num1[i]-'0', carry=0, i_n2=0 ;
+
+      for(j=len2-1 ; j>=0 ; j--){
+         int n2=num2[j]-'0' ;
+         int sum=n1*n2 + res[i_n1+i_n2]+carry ; 
+         carry=sum/10 ;
+         result[i_n1+i_n2]=sum%10 ;
+         i_n2++ ;
+
+      }
+      if(carry){
+          result[i_n1+i_n2]+=carry ;
+      }
+      i_n1++ ;
+   }
+
+   int i=result.size() ;
+   while(i>=0 && res[i]=='0')i-- ;
+
+   if(i==0)return "0" ;
+   string s="" ;
+
+    while (i >= 0) s += to_string(result[i--]);
+
+    return s;
+
+ 
+}
+
 void solve()
 {
- int n, i, j, k, m ;
-   cin>>n>>m>>k ;
-
-   unordered_map<int,int>a,b ;
-
-   int ara[n], bra[m] ;
-
-   for(i=0 ; i<n ; i++){
-      cin>>ara[i] ;
-      a[ara[i]]++ ;
-   }
-   for(j=0 ; j<m ; j++){
-      cin>>bra[j] ;
-      b[bra[j]]++ ;
-   }
-   cout<<"hello"<<endl;
-
-   int common=0, count_a=0, count_b=0, ans=0 ;
-
-   for(i=1 ; i<=k ; i++){
-      if(a[i] && b[i])common++ ;
-      if(a[i])count_a++ ;
-      else if(b[i])count_b++ ;
-      else{
-         ans=1;
-         break ;
-      }
-   }
-   
-
-   if(count_a>k/2 || count_b>k/2)ans=1 ;
-   else{
-      int rem=k/2-count_a+k/2-count_b ;
-      if(rem!=common)ans=1 ;
-   }
-   if(ans){
-      N ;
-      
-   }
-   else Y ;
-
-
+ 
 
 }
 
