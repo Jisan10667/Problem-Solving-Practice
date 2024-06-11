@@ -11,7 +11,6 @@
 #include<cmath>
 #include<string>
 #include<vector>
-#include<unordered_map>
 #include<map>
 #include<cstdio>
 #include<cstring>
@@ -25,7 +24,7 @@
 #define debug(x)  cout<<'>'<<#x<<":"<<x<<endl
 #define tara ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 #define Y printf("YES\n")
-// #define N printf("NO\n")
+#define N printf("NO\n")
 #define ll long long
 #define lll __int128
 #define ull unsigned long long
@@ -39,27 +38,39 @@
 #define INF 1<<30
 #define ll_INF 1LL<<62
  
-const int M=2e5+5;
+// const int M=1e5;
 
 int dx[] = {-1, 0, 0, 1};
 int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-struct ListNode {
-      int val;
-      ListNode *next;
-      ListNode() : val(0), next(nullptr) {}
-      ListNode(int x) : val(x), next(nullptr) {}
-      ListNode(int x, ListNode *next) : val(x), next(next) {}
- };
-
-void solve()
-{   
+bool isSquare(ll x)
+{
+    if (x >= 0) {
+ 
+        long long sr = sqrt(x);
+         
+        return (sr * sr == x);
+    }
     
-
+    return false;
 }
 
+void solve()
+{  
+  ll n, i ;
+
+  cin>>n ;
+
+  ll ara[n], sum=0 ;
+
+  for(i=0 ; i<n ; i++)cin>>ara[i], sum+=ara[i] ;
+
+   if(isSquare(sum))Y ;
+else N ;
+
+}
 
 int main(){
 #ifndef ONLINE_JUDGE
@@ -67,12 +78,12 @@ int main(){
    freopen("output.txt", "w", stdout);
 #endif
     
-    //tara ;
+     tara ;
    
-    int t, i, j;
-    t=1 ;
+    int t;
+    t = 1;
     
-    //cin >> t;
+    cin >> t;
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");

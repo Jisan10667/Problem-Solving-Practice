@@ -11,7 +11,6 @@
 #include<cmath>
 #include<string>
 #include<vector>
-#include<unordered_map>
 #include<map>
 #include<cstdio>
 #include<cstring>
@@ -25,7 +24,7 @@
 #define debug(x)  cout<<'>'<<#x<<":"<<x<<endl
 #define tara ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 #define Y printf("YES\n")
-// #define N printf("NO\n")
+#define N printf("NO\n")
 #define ll long long
 #define lll __int128
 #define ull unsigned long long
@@ -39,27 +38,41 @@
 #define INF 1<<30
 #define ll_INF 1LL<<62
  
-const int M=2e5+5;
+// const int M=1e5;
 
 int dx[] = {-1, 0, 0, 1};
 int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-struct ListNode {
-      int val;
-      ListNode *next;
-      ListNode() : val(0), next(nullptr) {}
-      ListNode(int x) : val(x), next(nullptr) {}
-      ListNode(int x, ListNode *next) : val(x), next(next) {}
- };
-
 void solve()
-{   
-    
+{  
+   int i,j,n=3 ;
 
+   char ara[n][n], idx=-1, idy=-1 ;
+
+   for(i=0 ; i<n ; i++){
+      for(j=0 ; j<n ; j++){
+         cin>>ara[i][j] ;
+         if(ara[i][j]=='?'){
+            idx=i ;
+            idy=j ;
+         }
+      }
+   }
+
+   bool a=0, b=0, c=0 ;
+   for(j=0 ; j<3 ; j++){
+      if(ara[idx][j]=='A')a=1 ;
+      else if(ara[idx][j]=='B')b=1 ;
+      else if(ara[idx][j]=='C')c=1 ;
+   }
+   if(a && b)cout<<'C'<<endl ;
+   if(b && c)cout<<'A'<<endl ;
+   if(c && a)cout<<'B'<<endl ;
+
+   
 }
-
 
 int main(){
 #ifndef ONLINE_JUDGE
@@ -67,12 +80,12 @@ int main(){
    freopen("output.txt", "w", stdout);
 #endif
     
-    //tara ;
+     tara ;
    
-    int t, i, j;
-    t=1 ;
+    int t;
+    t = 1;
     
-    //cin >> t;
+    cin >> t;
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");

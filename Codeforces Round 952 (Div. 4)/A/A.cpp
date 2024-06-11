@@ -11,7 +11,6 @@
 #include<cmath>
 #include<string>
 #include<vector>
-#include<unordered_map>
 #include<map>
 #include<cstdio>
 #include<cstring>
@@ -25,7 +24,7 @@
 #define debug(x)  cout<<'>'<<#x<<":"<<x<<endl
 #define tara ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 #define Y printf("YES\n")
-// #define N printf("NO\n")
+#define N printf("NO\n")
 #define ll long long
 #define lll __int128
 #define ull unsigned long long
@@ -39,40 +38,75 @@
 #define INF 1<<30
 #define ll_INF 1LL<<62
  
-const int M=2e5+5;
+// const int M=1e5;
 
 int dx[] = {-1, 0, 0, 1};
 int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-struct ListNode {
-      int val;
-      ListNode *next;
-      ListNode() : val(0), next(nullptr) {}
-      ListNode(int x) : val(x), next(nullptr) {}
-      ListNode(int x, ListNode *next) : val(x), next(next) {}
- };
 
 void solve()
-{   
+{ 
+   
+  ll n, k, q;
+    cin >> n >> k >> q;
+
+    vector<ll> a(k + 1), b(k + 1);
+    a[0] = 0;  
+    b[0] = 0;  
+
+    for (ll i = 1; i <= k; ++i) {
+        cin >> a[i];
+    }
+    for (ll i = 1; i <= k; ++i) {
+        cin >> b[i];
+    }
+
     
+    while (q--) {
+        ll d;
+        cin >> d;
+
+        if (d == 0) {
+            cout << 0 <<" ";
+            continue;
+        }
+
+        ll idx = lower_bound(a.begin(), a.end(), d) - a.begin();
+        if (a[idx] != d) {
+            --idx;  
+        }
+
+        
+        double distance = (d - a[idx])*1.0;
+        double timeAtStart = (b[idx])*1.0;
+        double timeAtEnd = (b[idx + 1])*1.0;
+        double segmentLength = (a[idx + 1] - a[idx])*1.0;
+        double speed = double((timeAtEnd - timeAtStart)*1.0) / (double)((segmentLength)*1.0);
+        ll reach = (ll)(floor(timeAtStart + speed * distance));
+
+        cout << reach << " ";
+    }
+    cout << endl;
+
+
 
 }
 
-
 int main(){
-#ifndef ONLINE_JUDGE
+    #ifndef ONLINE_JUDGE
    freopen("input.txt", "r", stdin);
    freopen("output.txt", "w", stdout);
 #endif
-    
-    //tara ;
    
-    int t, i, j;
-    t=1 ;
+    int t;
+    t = 1;
     
-    //cin >> t;
+    cin >> t;
+
+    
+  
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");
