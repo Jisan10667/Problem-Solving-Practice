@@ -38,60 +38,45 @@
 #define INF 1<<30
 #define ll_INF 1LL<<62
  
-// const int M=1e5;
+ const int M=2e5+10;
+ const int MOD = 1e9+7;
 
 int dx[] = {-1, 0, 0, 1};
 int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-
-void solve()
-{ 
-   
-  ll n, k, q;
-    cin >> n >> k >> q;
-
-    vector<ll> a(k + 1), b(k + 1);
-    a[0] = 0;  
-    b[0] = 0;  
-
-    for (ll i = 1; i <= k; ++i) {
-        cin >> a[i];
+ll binpow(ll a, ll b) {
+    a %= MOD;
+    ll res = 1;
+    while (b > 0) {
+        if (b & 1)
+            res = res * a % MOD;
+        a = a * a % MOD;
+        b >>= 1;
     }
-    for (ll i = 1; i <= k; ++i) {
-        cin >> b[i];
-    }
+    return res;
+}
 
-    
-    while (q--) {
-        ll d;
-        cin >> d;
+void solve() {
+   ll l, r, k;
+   cin >> l >> r >> k;
 
-        if (d == 0) {
-            cout << 0 <<" ";
-            continue;
-        }
+   if (k >=10) {
+     pf("0\n") ;
+     return ;
+   }
 
-        ll idx = lower_bound(a.begin(), a.end(), d) - a.begin();
-        if (a[idx] != d) {
-            --idx;  
-        }
-
+   ll div=10/k;
+   if (10%k!=0)div++;
         
-        double distance = (d - a[idx])*1.0;
-        double timeAtStart = (b[idx])*1.0;
-        double timeAtEnd = (b[idx + 1])*1.0;
-        double segmentLength = (a[idx + 1] - a[idx])*1.0;
-        double speed = double((timeAtEnd - timeAtStart)*1.0) / (double)((segmentLength)*1.0);
-        ll reach = (ll)(floor(timeAtStart + speed * distance));
 
-        cout << reach << " ";
-    }
-    cout << endl;
+   ll right = binpow(div, r);
+   ll left = binpow(div, l);
+   ll ans = (right - left) % MOD;  
+   ans=(ans+MOD)%MOD ;
 
-
-
+  cout<<ans<<endl;
 }
 
 int main(){
