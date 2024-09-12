@@ -4,7 +4,7 @@
 #include<set>
 #include<unordered_set>
 #include<list>
-#include<stack>
+#include<chrono>
 #include<random>
 #include<iostream>
 #include<algorithm>
@@ -31,6 +31,7 @@
 #define pii pair<int,int>
 #define pll pair<long,long>
 #define eb emplace_back
+#define pb push_back
 #define sc scanf
 #define pf printf
 #define endl '\n'
@@ -44,13 +45,26 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
+void solve()
+{  
+   ll n, k ;
+   cin>>n>>k ;
+   ll a[n], b[n] ;
+   
+   for(ll i=0 ; i<n ; i++)cin>>a[i] ;
+   for(ll i=0 ; i<n ; i++)cin>>b[i] ;
 
+   ll sum=0, ans=0, maxi=-1 ;
 
-void solve(){
-   int n ;
-   cin>>n ;
-   cout<<n<<endl ;
-    
+   for(ll i=0 ; i<n && k>0 ; i++ ){
+      sum+=a[i] ;
+      k-- ;
+      maxi=max(maxi,b[i]) ;
+
+      ans=max(ans,sum+k*maxi*1ll) ;
+   }
+   cout<<ans<<endl ;
+
 }
 
 int main(){
@@ -59,12 +73,12 @@ int main(){
    freopen("output.txt", "w", stdout);
 #endif
     
-    tara ;
+     tara ;
    
     int t;
     t = 1;
     
-    //cin >> t;
+    cin >> t;
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");

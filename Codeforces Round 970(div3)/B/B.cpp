@@ -4,7 +4,7 @@
 #include<set>
 #include<unordered_set>
 #include<list>
-#include<stack>
+#include<chrono>
 #include<random>
 #include<iostream>
 #include<algorithm>
@@ -31,6 +31,7 @@
 #define pii pair<int,int>
 #define pll pair<long,long>
 #define eb emplace_back
+#define pb push_back
 #define sc scanf
 #define pf printf
 #define endl '\n'
@@ -45,12 +46,28 @@ int dy[] = {0, -1, 1, 0};
 using namespace std ;
 
 
+ll gcd(ll a, ll b){
+   if(b==0)return a ;
+   return gcd(b,a%b) ;
+}
+void solve()
+{  
+   ll a, b ;
+   cin>>a>>b ;
 
-void solve(){
-   int n ;
-   cin>>n ;
-   cout<<n<<endl ;
-    
+   ll gc=gcd(a,b) ;
+
+   ll ans=(a*b)/gc ;
+   ll maxi=max(a,b) ;
+   if(a==1 || b==1){
+      cout<<ans*a*b<<endl ;
+   }
+   else if(ans==maxi){
+      cout<<ans*2<<endl ;
+   }
+   else{
+      cout<<ans<<endl ;
+   }
 }
 
 int main(){
@@ -59,12 +76,12 @@ int main(){
    freopen("output.txt", "w", stdout);
 #endif
     
-    tara ;
+    // tara ;
    
     int t;
     t = 1;
     
-    //cin >> t;
+    cin >> t;
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");

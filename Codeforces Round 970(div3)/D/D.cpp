@@ -4,7 +4,7 @@
 #include<set>
 #include<unordered_set>
 #include<list>
-#include<stack>
+#include<chrono>
 #include<random>
 #include<iostream>
 #include<algorithm>
@@ -31,6 +31,7 @@
 #define pii pair<int,int>
 #define pll pair<long,long>
 #define eb emplace_back
+#define pb push_back
 #define sc scanf
 #define pf printf
 #define endl '\n'
@@ -44,13 +45,34 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-
-
-void solve(){
-   int n ;
+void solve()
+{  
+   int n, i, j ;
    cin>>n ;
-   cout<<n<<endl ;
-    
+   char trump ;
+   cin>>trump ;
+
+   vector<string>card ;
+   vector<string>normal, trum, baki, c, d ;
+   for(i=0 ; i<2*n ; i++){
+      string s ;
+      cin>>s ;
+      card.push_back(s) ;
+      if(s.back()==trump){
+         trum.push_back(s) ;
+      }
+      else{
+         
+      }
+   }
+
+   sort(trump.begin(), trump.end()) ;
+
+
+
+
+
+
 }
 
 int main(){
@@ -59,12 +81,12 @@ int main(){
    freopen("output.txt", "w", stdout);
 #endif
     
-    tara ;
+     tara ;
    
     int t;
     t = 1;
     
-    //cin >> t;
+    cin >> t;
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");

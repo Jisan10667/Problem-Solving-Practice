@@ -47,46 +47,8 @@ using namespace std ;
 
 void solve()
 {
- int n, i, j, k, m ;
-   cin>>n>>m>>k ;
-
-   unordered_map<int,int>a,b ;
-
-   int ara[n], bra[m] ;
-
-   for(i=0 ; i<n ; i++){
-      cin>>ara[i] ;
-      a[ara[i]]++ ;
-   }
-   for(j=0 ; j<m ; j++){
-      cin>>bra[j] ;
-      b[bra[j]]++ ;
-   }
-   // cout<<"hello"<<endl;
-
-   int common=0, count_a=0, count_b=0, ans=0 ;
-
-   for(i=1 ; i<=k ; i++){
-      if(a[i] && b[i])common++ ;
-      else if(a[i])count_a++ ;
-      else if(b[i])count_b++ ;
-      else{
-         ans=1;
-         break ;
-      }
-   }
-   
-
-   if(count_a>k/2 || count_b>k/2)ans=1 ;
-   else{
-      int rem=k/2-count_a+k/2-count_b ;
-      if(rem!=common)ans=1 ;
-   }
-   if(ans){
-      N ;
-      
-   }
-   else Y ;
+ int n=4 ;
+ cout<<n<<endl ;
 
 
 

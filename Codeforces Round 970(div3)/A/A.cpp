@@ -4,7 +4,7 @@
 #include<set>
 #include<unordered_set>
 #include<list>
-#include<stack>
+#include<chrono>
 #include<random>
 #include<iostream>
 #include<algorithm>
@@ -31,8 +31,9 @@
 #define pii pair<int,int>
 #define pll pair<long,long>
 #define eb emplace_back
+#define pb push_back
 #define sc scanf
-#define pf printf
+#define pf printfP
 #define endl '\n'
 #define INF 1<<30
 #define ll_INF 1LL<<62
@@ -44,14 +45,21 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-
-
-void solve(){
-   int n ;
-   cin>>n ;
-   cout<<n<<endl ;
+void solve() {
+    ll x, y, k ;
+    cin>>x>>y>>k ;
+    ll ans=0;
+    ll curx=0, cury=0 ;
     
+    while(curx<x || cury<y){
+        if(ans%2==0)curx+=min(k,x-curx) ;
+        else cury+=min(k, y-cury) ;
+        
+        ans++ ;
+    }
+    cout<<ans<<endl;
 }
+
 
 int main(){
 #ifndef ONLINE_JUDGE
@@ -64,7 +72,7 @@ int main(){
     int t;
     t = 1;
     
-    //cin >> t;
+    cin >> t;
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");

@@ -45,22 +45,68 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-void solve()
-{  
-   ll n, k ;
-   cin>>n>>k ;
-   ll a[n], b[n] ;
-   
-   for(i=0 ; i<n ; i++)cin>>a[i] ;
-   for(i=0 ; i<n ; i++)cin>>b[i] ;
 
-   ll sum=0, ans=0, max=-1 ;
 
-   for(ll i=0 ; i<n && k>0 ; i++ ){
-      sum+=a[i] ;
-      k-- ;
-      m
-   }
+void solve() {
+        string s;
+        long long x;
+        cin >> s >> x;
+
+        int n = s.size();
+        vector<int> w_pos, o_pos;
+
+        for (int i = 0; i < n; ++i) {
+            if (s[i] == 'w') w_pos.push_back(i);
+            else if (s[i] == 'o') o_pos.push_back(i);
+        }
+
+        if (w_pos.size() < 2 || o_pos.size() == 0) {
+            cout << "-1\n";
+            return;
+        }
+
+        auto count_wow = [&](int l, int r) -> long long {
+            int w_b = 0, w_a = 0;
+            long long cnt = 0;
+            for (int i = 0; i < o_pos.size(); ++i) {
+                if (o_pos[i] < l || o_pos[i] > r) continue;
+                w_b = w_a = 0;
+                for (int j = 0; j < w_pos.size(); ++j) {
+                    if (w_pos[j] < o_pos[i] && w_pos[j] >= l) w_b++;
+                    if (w_pos[j] > o_pos[i] && w_pos[j] <= r) w_a++;
+                }
+                cnt += (long long)w_b * w_a;
+            }
+            return cnt;
+        };
+
+        int best_l = -1, best_r = -1;
+        int l = 0, r = 0;
+        while (r < n) {
+            long long cnt = count_wow(l, r);
+            if (cnt == x) {
+                int ext_r = r;
+                while (ext_r + 1 < n && count_wow(l, ext_r + 1) == x) {
+                    ext_r++;
+                }
+                if (best_l == -1 || ext_r - l > best_r - best_l) {
+                    best_l = l;
+                    best_r = ext_r;
+                }
+                l++;
+            } else if (cnt < x) {
+                r++;
+            } else {
+                l++;
+            }
+        }
+
+        if (best_l == -1) {
+            cout << "-1\n";
+        } else {
+            cout << best_l + 1 << " " << best_r + 1 << "\n";
+        }
+    
 
 }
 
