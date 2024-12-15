@@ -1,0 +1,740 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inc",
+				"include"
+			],
+			[
+				"b",
+				"cstdlib"
+			],
+			[
+				"io",
+				"iostream"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/A.cpp",
+			"settings":
+			{
+				"buffer_size": 1341,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"left_delete",
+					null,
+					"AQAAALMDAAAAAAAAswMAAAAAAAALAQAAIGludCBuIDsKICAgIGNpbj4+biA7CiAgICBzdHJpbmcgcyA7CiAgICBjaW4+PnMgOwogICAgdW5vcmRlcmVkX21hcDxjaGFyLCBpbnQ+bXAgOwogICAgZm9yKGludCBpPTAgOyBpPG4gOyBpKyspewogICAgICAgIG1wW3NbaV1dKysgOwogICAgfQogICAgaW50IGFucz0wIDsKICAgIGZvcihhdXRvIHg6IG1wKXsKICAgICAgICBpZih4LlM+PWludCh4LkYtJ0EnKzEpKXsKICAgICAgICAgICAgYW5zKysgOwogICAgICAgIH0KICAgIH0KICAgIGNvdXQ8PGFuczw8ZW5kbCA7",
+					"AQAAAAAAAAABAAAAswMAAAAAAAC+BAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"BAAAAC4EAAAAAAAALgQAAAAAAAADAAAALy8gBAQAAAAAAAAEBAAAAAAAAAMAAAAvLyDcAwAAAAAAANwDAAAAAAAAAwAAAC8vIMQDAAAAAAAAxAMAAAAAAAADAAAALy8g",
+					"AQAAAAAAAAABAAAANwQAAAAAAADEAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "int"
+					},
+					"AwAAALMDAAAAAAAAtAMAAAAAAAAAAAAAtAMAAAAAAAC1AwAAAAAAAAAAAAC1AwAAAAAAALYDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAswMAAAAAAACzAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": " n"
+					},
+					"AgAAALYDAAAAAAAAtwMAAAAAAAAAAAAAtwMAAAAAAAC4AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtgMAAAAAAAC2AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": " ;"
+					},
+					"AgAAALgDAAAAAAAAuQMAAAAAAAAAAAAAuQMAAAAAAAC6AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuAMAAAAAAAC4AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": "\ncin>>n"
+					},
+					"CAAAALoDAAAAAAAAuwMAAAAAAAAAAAAAuwMAAAAAAAC+AwAAAAAAAAAAAAC+AwAAAAAAAL8DAAAAAAAAAAAAAL8DAAAAAAAAwAMAAAAAAAAAAAAAwAMAAAAAAADBAwAAAAAAAAAAAADBAwAAAAAAAMIDAAAAAAAAAAAAAMIDAAAAAAAAwwMAAAAAAAAAAAAAwwMAAAAAAADEAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAugMAAAAAAAC6AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": " ;"
+					},
+					"AgAAAMQDAAAAAAAAxQMAAAAAAAAAAAAAxQMAAAAAAADGAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAMAAAAAAADEAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "\nif"
+					},
+					"BAAAAMYDAAAAAAAAxwMAAAAAAAAAAAAAxwMAAAAAAADKAwAAAAAAAAAAAADKAwAAAAAAAMsDAAAAAAAAAAAAAMsDAAAAAAAAzAMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgMAAAAAAADGAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAMwDAAAAAAAAzgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzAMAAAAAAADMAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "n%3"
+					},
+					"AwAAAM0DAAAAAAAAzgMAAAAAAAAAAAAAzgMAAAAAAADPAwAAAAAAAAAAAADPAwAAAAAAANADAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzQMAAAAAAADNAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": "pf"
+					},
+					"AgAAANEDAAAAAAAA0gMAAAAAAAAAAAAA0gMAAAAAAADTAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0QMAAAAAAADRAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAANMDAAAAAAAA1QMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0wMAAAAAAADTAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					},
+					"AQAAANQDAAAAAAAA1gMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1AMAAAAAAADUAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": "First\\"
+					},
+					"BgAAANUDAAAAAAAA1gMAAAAAAAAAAAAA1gMAAAAAAADXAwAAAAAAAAAAAADXAwAAAAAAANgDAAAAAAAAAAAAANgDAAAAAAAA2QMAAAAAAAAAAAAA2QMAAAAAAADaAwAAAAAAAAAAAADaAwAAAAAAANsDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1QMAAAAAAADVAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": "n"
+					},
+					"AQAAANsDAAAAAAAA3AMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2wMAAAAAAADbAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": " ;"
+					},
+					"AgAAAN4DAAAAAAAA3wMAAAAAAAAAAAAA3wMAAAAAAADgAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gMAAAAAAADeAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"insert",
+					{
+						"characters": "\nelse"
+					},
+					"BgAAAOADAAAAAAAA4QMAAAAAAAAAAAAA4QMAAAAAAADkAwAAAAAAAAAAAADkAwAAAAAAAOUDAAAAAAAAAAAAAOUDAAAAAAAA5gMAAAAAAAAAAAAA5gMAAAAAAADnAwAAAAAAAAAAAADnAwAAAAAAAOgDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4AMAAAAAAADgAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": " pf"
+					},
+					"AwAAAOgDAAAAAAAA6QMAAAAAAAAAAAAA6QMAAAAAAADqAwAAAAAAAAAAAADqAwAAAAAAAOsDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6AMAAAAAAADoAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAOsDAAAAAAAA7QMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6wMAAAAAAADrAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					},
+					"AQAAAOwDAAAAAAAA7gMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7AMAAAAAAADsAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"insert",
+					{
+						"characters": "Second"
+					},
+					"BgAAAO0DAAAAAAAA7gMAAAAAAAAAAAAA7gMAAAAAAADvAwAAAAAAAAAAAADvAwAAAAAAAPADAAAAAAAAAAAAAPADAAAAAAAA8QMAAAAAAAAAAAAA8QMAAAAAAADyAwAAAAAAAAAAAADyAwAAAAAAAPMDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7QMAAAAAAADtAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"insert",
+					{
+						"characters": "\\n"
+					},
+					"AgAAAPMDAAAAAAAA9AMAAAAAAAAAAAAA9AMAAAAAAAD1AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8wMAAAAAAADzAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert",
+					{
+						"characters": " ;"
+					},
+					"AgAAAPcDAAAAAAAA+AMAAAAAAAAAAAAA+AMAAAAAAAD5AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9wMAAAAAAAD3AwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/input.txt",
+			"settings":
+			{
+				"buffer_size": 22,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAuAAAAMwo2CkFDQkNCQwo3CkFBQUFGUEMKMjIKRkVBREJCREZGRURGRkZESEhIQURDQw",
+					"AQAAAAAAAAABAAAALgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAFQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+				]
+			]
+		},
+		{
+			"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/output.txt",
+			"settings":
+			{
+				"buffer_size": 38,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					4,
+					"left_delete",
+					null,
+					"BAAAAAMAAAAAAAAAAwAAAAAAAAACAAAACjQCAAAAAAAAAAIAAAAAAAAAAQAAADEBAAAAAAAAAAEAAAAAAAAAAQAAAAoAAAAAAAAAAAAAAAAAAAAAAQAAADM",
+					"AQAAAAAAAAABAAAABQAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"revert",
+					null,
+					"AgAAAAAAAAAAAAAAAAAAAAAAAAABAAAACgAAAAAAAAAAJgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "Packages/User/C++14.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C++14.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++14.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C++14.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: Namespace"
+			],
+			[
+				"Snippet:",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"Snippet: h",
+				"Snippet: Do While Loop"
+			],
+			[
+				"install",
+				"Package Control: Advanced Install Packages"
+			],
+			[
+				"intsa",
+				"Package Control: Install Package"
+			],
+			[
+				"Insta",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 172.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A"
+	],
+	"file_history":
+	[
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /B/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /B/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /B/B.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/E/E",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /A/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /A/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/D/D.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 913 div3 /A/A.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/E/E.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/E/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/E/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/D/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/D/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/C/C.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/C/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/C/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/B/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/B/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/B/B.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/A/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/A/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/Codeforces Round 918 (Div. 4)/A/A.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/D/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/D/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/D/D.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/C/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/C/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/B/B.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/C/C.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/B/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/B/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/C/A.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/A/output.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/A/input.txt",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/A/A.cpp",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/A/A",
+		"/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 916 div3/B/A.cpp",
+		"/Users/fayjulislammanik/Desktop/untitled folder/Problem-Solving/Codeforces Round 916 (Div. 3)/A/input.txt",
+		"/Users/fayjulislammanik/Library/Application Support/Sublime Text/Packages/User/untitled",
+		"/Users/fayjulislammanik/Desktop/untitled folder/Problem-Solving/Codeforces Round 916 (Div. 3)/A/firstProgram.cpp",
+		"/Users/fayjulislammanik/Desktop/untitled folder/Problem-Solving/Codeforces Round 916 (Div. 3)/A/vaii",
+		"/Users/fayjulislammanik/Library/Application Support/Sublime Text/Packages/User/cpp_template",
+		"/Users/fayjulislammanik/Desktop/untitled folder/Problem-Solving/Codeforces Round 916 (Div. 3)/A/firstProgram",
+		"/Users/fayjulislammanik/Desktop/untitled folder/Problem-Solving/HelloWorld",
+		"/Users/fayjulislammanik/Library/Application Support/Sublime Text/Packages/User/c++17",
+		"/Users/fayjulislammanik/Library/Application Support/Sublime Text/Packages/User/hello.cpp",
+		"/Users/fayjulislammanik/Library/Application Support/Sublime Text/Packages/User/C++.sublime-build"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/A.cpp",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 842.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/input.txt",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "/Volumes/Jisan Swe/Compeetitive Programming/Problem-Solving-Practice/ Codeforces Round 909 div3/A/output.txt",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.671132112868,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 296.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/C++14.sublime-build",
+	"project": "My_Home.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 274.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

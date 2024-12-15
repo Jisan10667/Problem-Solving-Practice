@@ -45,63 +45,63 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
+void solve()
+{  
+  
 
+   int i, j, n ;
 
-void solve(){
-    cout<<"h" ;
-   int n, m;
-   cin>>n>>m ;
-   
-   vector<int>adj[n+1] ;
-   int par[n+1], dis[n+1] ;
-   
-   for(int i=1 ; i<=n ; i++)dis[i]=INT_MAX ;
-   for(int i=0 ; i<m ; i++){
-    int x, y ;
-    cin>>x>>y ;
-    adj[x].push_back(y) ;
-    adj[y].push_back(x) ;
-   }
-   
-   
-   queue<int>q ;
-   q.push(1) ;
-   par[1]=-1 ;
-   while(!q.empty()){
-    int from=q.front() ;
-    q.pop() ;
-    
-    for(int to:adj[from]){
-        if(dis[to]>dis[from]+1){
-            dis[to]=dis[from]+1 ;
-            par[to]=from ;
-            q.push(to) ;
-        }
-    }
-   }
-   
-   if(dis[n]==INT_MAX)pf("IMPOSSIBLE\n") ;
-   else{
-    cout<<dis[n]+1<<endl ;
-    vector<int>path ;
-    while(par[n]!=-1){
-        path.push_back(n) ;
-        n=par[n] ;
-    }
-    reverse(path.begin(),path.end()) ;
-    for(int p:path)cout<<p<<" " ;
-    cout<<endl ;
-   }
-   
+   cin>>n ;
+   vector<pair<int,int> > ski(n),movie(n),bored(n);
 
+   for(i=0 ; i<3 ; i++){
+      for(j=0 ; j<n ; j++){
+         int x ;
+         cin>>x ;
+
+         if(i==0)ski[j]={x,j+1} ;
+         if(i==1)movie[j]={x,j+1} ;
+         if(i==2)bored[j]={x,j+1} ;
+      }
+   }
+
+   sort(ski.begin(),ski.end()) ;
+   sort(movie.begin(),movie.end()) ;
+   sort(bored.begin(),bored.end()) ;
+   int maxi=-1 ;
+   for(i=0 ; i<3 ; i++){
+      int sk=-1,mov=-1,bor=-1, sum=0 ;
+
+      for(int skj=0 ; skj<3 ; skj++){
+         sk=ski[skj].S ;
+         for(int movj=0 ; movj<3 ; movj++){
+            mov=movie[movj].S ;
+            if(mov==sk)continue ;
+
+            for(int borj=0 ; borj<3 ; borj++){
+               bor=bored[borj].S ;
+               if(sk==bor)continue ;
+               if(mov==bor)continue ;
+
+               // cout<<sk<<" "<<mov<<" "<<bor<<endl ;
+               sum=ski[sk-1].F+movie[mov-1].F+bored[bor-1].F ;
+               maxi=max(maxi,sum) ;
+               // cout<<maxi<<endl ;
+
+            }
+         }
+
+      }
+   } 
+   cout<<maxi<<endl ;  
 
 }
 
 int main(){
 #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
- #endif
+   freopen("input.txt", "r", stdin);
+   freopen("output.txt", "w", stdout);
+#endif
     
      tara ;
    

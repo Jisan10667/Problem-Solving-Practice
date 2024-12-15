@@ -45,65 +45,32 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
+void solve()
+{  
+   ll n, k ;
+   cin>>n>>k ;
+   ll a[n], b[n] ;
+   
+   for(i=0 ; i<n ; i++)cin>>a[i] ;
+   for(i=0 ; i<n ; i++)cin>>b[i] ;
 
+   ll sum=0, ans=0, max=-1 ;
 
-void solve(){
-    cout<<"h" ;
-   int n, m;
-   cin>>n>>m ;
-   
-   vector<int>adj[n+1] ;
-   int par[n+1], dis[n+1] ;
-   
-   for(int i=1 ; i<=n ; i++)dis[i]=INT_MAX ;
-   for(int i=0 ; i<m ; i++){
-    int x, y ;
-    cin>>x>>y ;
-    adj[x].push_back(y) ;
-    adj[y].push_back(x) ;
+   for(ll i=0 ; i<n && k>0 ; i++ ){
+      sum+=a[i] ;
+      k-- ;
+      m
    }
-   
-   
-   queue<int>q ;
-   q.push(1) ;
-   par[1]=-1 ;
-   while(!q.empty()){
-    int from=q.front() ;
-    q.pop() ;
-    
-    for(int to:adj[from]){
-        if(dis[to]>dis[from]+1){
-            dis[to]=dis[from]+1 ;
-            par[to]=from ;
-            q.push(to) ;
-        }
-    }
-   }
-   
-   if(dis[n]==INT_MAX)pf("IMPOSSIBLE\n") ;
-   else{
-    cout<<dis[n]+1<<endl ;
-    vector<int>path ;
-    while(par[n]!=-1){
-        path.push_back(n) ;
-        n=par[n] ;
-    }
-    reverse(path.begin(),path.end()) ;
-    for(int p:path)cout<<p<<" " ;
-    cout<<endl ;
-   }
-   
-
 
 }
 
 int main(){
 #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
- #endif
+   freopen("input.txt", "r", stdin);
+   freopen("output.txt", "w", stdout);
+#endif
     
-     tara ;
+    // tara ;
    
     int t;
     t = 1;

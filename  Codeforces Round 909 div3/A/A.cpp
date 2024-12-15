@@ -45,26 +45,45 @@ int dy[] = {0, -1, 1, 0};
 using namespace std ;
 
 
+void printCenteredTriangle(int baseLimit) {
+    // Loop through each row from 1 to baseLimit
+    for (int row = 1; row <= baseLimit; row++) {
+        // Print spaces to center-align the row
+        int spaces = baseLimit - row;  // The number of spaces needed before the numbers
+        for (int s = 0; s < spaces; s++) {
+            cout << " ";  // Print spaces to center the triangle
+        }
+        
+        // Print numbers for the current row
+        for (int num = 1; num <= row; num++) {
+            cout << num << " ";  // Print numbers with a space
+        }
+        
+        cout << endl;  // Move to the next line after printing each row
+    }
+}
 
 void solve(){
-   int n ;
-   cin>>n ;
-   cout<<n<<endl ;
-    
+    int baseLimit; 
+    cout << "Enter the base level of the triangle: ";
+    cout<<endl;
+    cin >> baseLimit;
+cout<<endl;
+    printCenteredTriangle(baseLimit);
+   
 }
 
 int main(){
-#ifndef ONLINE_JUDGE
+
    freopen("input.txt", "r", stdin);
    freopen("output.txt", "w", stdout);
-#endif
-    
-    tara ;
+
+    //tara ;
    
     int t;
     t = 1;
     
-    //cin >> t;
+    cin >> t;
 
     for(int i=0; i<t; i++) {
         // if(i) printf("\n");

@@ -23,8 +23,7 @@
 #define S second
 #define debug(x)  cout<<'>'<<#x<<":"<<x<<endl
 #define tara ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0)
-#define Y printf("YES\n")
-#define N printf("NO\n")
+
 #define ll long long
 #define lll __int128
 #define ull unsigned long long
@@ -38,30 +37,41 @@
 #define INF 1<<30
 #define ll_INF 1LL<<62
  
-// const int M=1e5;
+ const int M=1e5;
 
 int dx[] = {-1, 0, 0, 1};
 int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-void solve()
-{
-    int n ;
-    cin>>n ;
-    int cnt=0 ;
-    for(int i=0 ; i<n ; i++){
-        int x ;
-        cin>>x ;
-        if(x==2){
-            cnt++ ;
-        }
-    }
-    if(cnt%8)N ;
-    else Y ;
 
-
+ 
+void solve() {
+   int maxi=-1, maxodd=-1, maxeven=-1, n ;
+   cin>>n ;
+   int ara[n], idx=-1 ;
+   
+   for(int i=0 ; i<n ; i++){
+     cin>>ara[i] ;
+     if(maxi<ara[i])maxi=ara[i], idx=i ;
+     if(i%2==0){
+        maxodd=max(maxodd,ara[i]) ;
+     }
+     else{
+        maxeven=max(maxeven,ara[i]) ;
+     }
+   }
+   if(n%2==0){
+    cout<<maxi+n/2<<endl ;
+   }
+   else{
+    cout<<max(maxodd+(n+1)/2,maxeven+n/2)<<endl ;
+   }
+   
+    
 }
+
+
 
 int main(){
 #ifndef ONLINE_JUDGE

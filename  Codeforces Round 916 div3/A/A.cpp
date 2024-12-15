@@ -45,33 +45,39 @@ int dy[] = {0, -1, 1, 0};
 
 using namespace std ;
 
-void solve()
-{
-    int n ;
-    cin>>n ;
-    string s ;
-    cin>>s ;
-    unordered_map<char, int>mp ;
-    for(int i=0 ; i<n ; i++){
-        mp[s[i]]++ ;
-    }
-    int ans=0 ;
-    for(auto x: mp){
-        if(x.S>=int(x.F-'A'+1)){
-            ans++ ;
+void solve(){
+    ll n, m ;
+    cin>>n>>m ;
+    ll maxi=-1 ;
+    
+    ll ara[n] ;
+    
+    for(ll i=0 ; i<n ; i++)cin>>ara[i], maxi=max(maxi,ara[i]) ;
+        
+    
+    
+    while(m--){
+        char x ;
+        cin>>x ;
+        ll l, r ;
+        cin>>l>>r ;
+        if(maxi>=l && maxi<=r){
+            if(x=='+')maxi++ ;
+            else maxi-- ;
         }
+        cout<<maxi<<" " ; 
     }
-    cout<<ans<<endl ;
-
+    cout<<endl ;
+        
 }
 
 int main(){
-// #ifndef ONLINE_JUDGE
-//    freopen("input.txt", "r", stdin);
-//    freopen("output.txt", "w", stdout);
-// #endif
+#ifndef ONLINE_JUDGE
+   freopen("input.txt", "r", stdin);
+   freopen("output.txt", "w", stdout);
+#endif
     
-    tara ;
+    //tara ;
    
     int t;
     t = 1;
